@@ -1,0 +1,174 @@
+/*
+ File: /ahaider/index.html
+ Assignment: Creating Your First Web Page
+ Ali Haider, UMass Lowell Computer Science, ali_haider@student.uml.edu
+ Copyright (c) 2020 by Ali Haider. All rights reserved. May be
+ freely copied or excerpted for educational purposes with credit to the
+ author.
+ Updated by Ali Haider on September 06, 2020 at 9:00 PM
+*/
+
+/* cusive font link */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+/* regular font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+#mainPage {
+    background-color: #24252a;
+    height: 100vh;
+}
+header {
+    background: #3e9c87;
+    height: 8%;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+}
+.logo {
+    height: 6vh;
+    width: auto;
+    cursor: pointer;
+}
+.navLinks {
+    display: flex;
+    list-style: none;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.navLinks li {
+    margin-right: 40px;
+}
+li, a {
+    font-size: 17px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+.navLinks li a {
+    transition: all 0.3s ease 0s;
+}
+.navLinks li a:hover {
+    color: #24252a
+}
+.welcomeContainer {
+    height: 92%;
+    width: 70%;
+    margin: auto;
+}
+.intro {
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    align-items: flex-end;
+    height: 48%;
+    font-family: 'Sacramento', cursive;
+    font-size: 8vw;
+    color: #edf0f1;
+}
+.intro1 {
+    text-align: center;
+    height: 10%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2vw;
+    color: #edf0f1;
+}
+.coverImgContainer {
+    width: fit-content;
+    height: 42%;
+    margin: auto;
+}
+.coverImg {
+    height: 100%;
+    max-width: 100%;
+}
+#aboutPage {
+    background-color: #edf0f1;
+    height: 100vh;
+    display: flex;
+}
+.aboutMainContent {
+    background-color: #24252a;
+    height: 80%;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #edf0f1;
+    border-left: 10px #3e9c87 solid;
+}
+.aboutMainContent h1 {
+    font-size: 4vw;
+    padding-left: 2%;
+    width: 97%;
+    height: 12%;
+    margin: auto;
+    border-bottom: 2px solid #3e9c87;
+}
+.aboutContainer {
+    height: 88%;
+}
+.aboutContainer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 35%;
+}
+.aboutContainer h2 {
+    font-size: 3vw;
+    width: fit-content;
+    margin: auto;
+}
+.aboutContainer p {
+    padding: 0 2% 0 2%;
+    font-size: 2vw;
+    line-height: 1.5;
+}
+#projectPage {
+    height: 100vh;
+    background-color: #edf0f1;
+    display: flex;
+}
+.projectContainer {
+    background-color: #24252a;
+    width: 70%;
+    margin: auto;
+    height: 90%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #edf0f1;
+}
+.projectContainer h1 {
+    font-size: 3vw;
+    padding-left: 2%;
+    width: 97%;
+    margin: auto;
+    border-bottom: 2px solid #3e9c87;
+}
+.hw {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    padding: 2%;
+    cursor: pointer;
+}
+.hwAssignments {
+    margin: 2%;
+    filter: grayscale(100%);
+}
+.hwAssignments:hover {
+    transition: all 0.6s ease 0s;
+    filter: grayscale(0%);
+}
+.hwAssignments h2 {
+    width: fit-content;
+    margin: auto;
+}
