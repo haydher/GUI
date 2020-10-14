@@ -1,0 +1,58 @@
+/*
+File: https://cs.uml.edu/~ahaider/guiProjects/hw4/index.html
+ Assignment: Remaking the portfolio with bootstrap
+ Ali Haider, UMass Lowell Computer Science, ali_haider@student.uml.edu
+ Copyright (c) 2020 by Ali Haider. All rights reserved. May be
+ freely copied or excerpted for educational purposes with credit to the
+ author.
+ Updated by Ali Haider on Oct 12, 2020 at 4:00 AM */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* my links jump on a specific part of the page,
+so this just helps make it smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+a, a:link, a:visited  {
+    text-decoration: none;
+    color: white;
+}
+#mainPage .jumbotron {
+    padding: 15% 0;
+    margin: 0;
+    background: rgb(62,156,135);
+    background: -webkit-linear-gradient(63deg, rgba(62,156,135,1) 0%, rgba(36,37,42,1) 100%);
+    background: -o-linear-gradient(63deg, rgba(62,156,135,1) 0%, rgba(36,37,42,1) 100%);
+    background: linear-gradient(153deg, rgba(62,156,135,1) 0%, rgba(36,37,42,1) 100%);
+    color: #eee;
+}
+span {
+    color: #3e9c87;
+    font-weight: bold;
+}
+#aboutPage .jumbotron, #projectPage .jumbotron, #contactMe .jumbotron {
+    color: #24252a;
+}
+
+.btn {
+    background: #3e9c87;
+    border: none;
+}
+
+.contactImg img {
+    height: 50px;
+    margin: 10px;
+}
+
+footer {
+    background:#24252a;
+    color: #edf0f1;
+}
