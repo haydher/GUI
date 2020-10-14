@@ -19,6 +19,7 @@ File: https://cs.uml.edu/~ahaider/guiProjects/hw4/index.html
 so this just helps make it smooth */
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a, a:link, a:visited  {
