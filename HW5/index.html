@@ -54,22 +54,29 @@ File: https://cs.uml.edu/~ahaider/guiProjects/hw5/index.html
                 </div>
                 <form class="p-3">
                     <div class="form-group">
-                    <label>Minimum Column Value</label>
-                    <input type="number" class="minXValue form-control mb-3" name="minXValue" placeholder="Enter minimum X Value">
-                    <label>Maximum Column Value</label>
-                    <input type="number" class="maxXValue form-control mb-3" name="maxXValue" placeholder="Enter maximum X Value">
-                    <label>Minimum Row Value</label>
-                    <input type="number" class="minYValue form-control mb-3" name="minYValue" placeholder="Enter minimum Y Value">
+                        <label>Minimum Column Value</label>
+                        <input type="number" class="minXValue form-control mb-3" name="minXValue" placeholder="Enter minimum X Value">
+                    </div>
+                    <div class="form-group">
+                        <label>Maximum Column Value</label>
+                        <input type="number" class="maxXValue form-control mb-3" name="maxXValue" placeholder="Enter maximum X Value">
+                    </div>
+                    <div class="form-group">
+                        <label>Minimum Row Value</label>
+                        <input type="number" class="minYValue form-control mb-3" name="minYValue" placeholder="Enter minimum Y Value">
+                    </div>
+                    <div class="form-group">
                     <label>Minimum Row Value</label>
                     <input type="number" class="maxYValue form-control" name="maxYValue" placeholder="Enter maximum Y Value">
+                    </div>
                     <br>
                     <button type="button" class="subBtn " name="button">Submit</button>
                     <button type="reset" class="resetBtn" name="button">Reset</button>
                 </form>
+                <div class="container-fluid">
+                    <div id="errorLog" class="text-danger font-weight-bold"></div>
+                </div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <div id="errorLog" class="text-danger font-weight-bold"></div>
         </div>
     </section >
     <div class="container-fluid p-2 overflow">
