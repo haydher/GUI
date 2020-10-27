@@ -114,7 +114,7 @@ function validator(minXValue, maxXValue, minYValue, maxYValue){
 
     if(isNaN(minXValue) || isNaN(maxXValue) || isNaN(minYValue) || isNaN(maxYValue))
     {
-        const errorNode = document.createTextNode("Form is empty. Please out fill all inputs.");
+        const errorNode = document.createTextNode("Form is empty. Please fill out all inputs.");
         logError(errorNode);
         return 0;
 
