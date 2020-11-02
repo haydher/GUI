@@ -1,0 +1,54 @@
+#navBar {
+  background: #121212;
+}
+.welcomeHeader {
+  height: 400px;
+  width: 100%;
+  background: #121212;
+
+  background-image: url("../../images/pageBG/bgStyle5.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+.welcomeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+}
+.welcomeContainer h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: 400;
+}
+
+/* ipad and tablets */
+@media only screen and (min-width: 762px) and (max-width: 992px) {
+  .welcomeHeader {
+    height: 350px;
+    background-position: center top;
+  }
+}
+
+/* for mobile phones */
+@media only screen and (max-width: 762px) {
+  .welcomeHeader {
+    height: 10vh;
+    background: #121212;
+  }
+  .welcomeContainer {
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+  }
+  .welcomeContainer h1 {
+    font-size: 35px;
+    color: white;
+    font-weight: 400;
+  }
+}
