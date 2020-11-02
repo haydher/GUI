@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Personal Website</title>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Personal styles -->
+  <link rel="stylesheet" href="css/styleSheets/mainStyleSheet.css">
+  <link rel="stylesheet" href="css/styleSheets/subPageHeader.css">
+  <link rel="stylesheet" href="css/styleSheets/navBar.css">
+  <link rel="stylesheet" href="css/styleSheets/footer.css">
+
+  <!-- Media Queries min-width 1920 and up monitors -->
+  <link rel="stylesheet" href="css/mediaQueries/mediaQueryMainMin1920.css">
+  <!-- Media Queries min-width 1200 max-width 1920 monitors -->
+  <link rel="stylesheet" href="css/mediaQueries/mediaQueryMainMin1200-1920.css">
+
+  <!-- Media Queries min-width 762 max-width 996 tablets -->
+  <link rel="stylesheet" href="css/mediaQueries/mediaQueryMainMin996-1200.css">
+
+  <!-- Media Queries min-width 762 max-width 996 tablets -->
+  <link rel="stylesheet" href="css//mediaQueries/mediaQueryMainMin762-996.css">
+
+  <!-- Media Queries max-width 762 mobible-devices -->
+  <link rel="stylesheet" href="css/mediaQueries/mediaQueryMainMax762.css">
+  <link rel="stylesheet" href="css/mediaQueries/hamburgerToggleMax762.css">
+
+</head>
+<body>
+  <div id="navBar">
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
+        <div class="hamburger" id="navBurger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="navOpns">
+        <ul class="navUL visibilityToggle">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+        </ul> 
+      </div>
+    </header>
+  </div>
+
+  <div class="welcomeHeader">
+    <div class="welcomeContainer">
+      <h1>Contact Me</h1>
+    </div>
+  </div>
+
+  <div id="contactPage">
+    <div class="contactContainer">
+      <div class="contactInfo">
+        <div class="contactInfoHeader">
+          <h1>Got a question or want to talk? Feel free to <span>contact me!</span></h1>
+          </div>
+          <div class="socialLink hideInMobile">
+            <h3>Email</h3>
+            <p><a href="mailto:ali_haider@student.uml.edu">ali_haider@student.uml.edu</a></p>
+            <p><a href="mailto:haider0612@gmail.com">haider0612@gmail.com</a></p>
+            <div class="socialIcons">
+                <a href="https://www.instagram.com/its_alihaider/" target="_blank"><img src="images/icons/ig.svg" alt="INSTAGRAM icon"></a>
+                <a href="https://www.github.com/haydher/" target="_blank"><img src="images/icons/github.svg" alt="GITHUB icon"></a>
+                <a href="mailto:ali_haider@student.uml.edu" target="_blank"><img src="images/icons/email.svg" alt="Email icon"></a>
+            </div>
+          </div>
+      </div>
+      <div class="contactForm">
+        <form action="https://getform.io/f/2144eacb-dda4-45e1-9da9-33790bb39afa" method="post">
+          <input type="text" id="fName" name="fname" placeholder="First Name"><br>
+          <input type="text" id="lName" name="lname" placeholder="Last Name"><br>
+          <input type="text" id="email" name="email" placeholder="Email"><br>
+          <textarea id="textArea" name="text" placeholder="Message"></textarea><br>
+          <input type="submit"  class="btn" value="SUBMIT">
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footerContainer">
+      <div class="logoFooter">
+        <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
+      </div>
+      <div class="footerLinks">
+        <ul class="footNavLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+        <div class="socialIcons showInMobile">
+          <a href="https://www.instagram.com/its_alihaider/" target="_blank"><img src="images/icons/ig.svg" alt="INSTAGRAM icon"></a>
+          <a href="https://www.github.com/haydher/" target="_blank"><img src="images/icons/github.svg" alt="GITHUB icon"></a>
+          <a href="mailto:ali_haider@student.uml.edu" target="_blank"><img src="images/icons/email.svg" alt="Email icon"></a>
+        </div>
+        <div class="copyright">
+          <p>Copyright 2020 - Ali Haider</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+  <script src="javascript/script.js" charset="utf-8"></script>
+</html>

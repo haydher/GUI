@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+        <title>Personal Website</title>
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+        <!-- Personal styles -->
+        <link rel="stylesheet" href="css/styleSheets/mainStyleSheet.css">
+        <link rel="stylesheet" href="css/styleSheets/navBar.css">
+        <link rel="stylesheet" href="css/styleSheets/footer.css">
+
+        <!-- Media Queries min-width 1920 and up monitors -->
+        <link rel="stylesheet" href="css/mediaQueries/mediaQueryMainMin1920.css">
+        <!-- Media Queries min-width 1200 max-width 1920 monitors -->
+        <link rel="stylesheet" href="css/mediaQueries/mediaQueryMainMin1200-1920.css">
+
+        <!-- Media Queries min-width 762 max-width 996 tablets -->
+        <link rel="stylesheet" href="css/mediaQueries/mediaQueryMainMin996-1200.css">
+
+        <!-- Media Queries min-width 762 max-width 996 tablets -->
+        <link rel="stylesheet" href="css//mediaQueries/mediaQueryMainMin762-996.css">
+
+        <!-- Media Queries max-width 762 mobible-devices -->
+        <link rel="stylesheet" href="css/mediaQueries/mediaQueryMainMax762.css">
+        <link rel="stylesheet" href="css/mediaQueries/hamburgerToggleMax762.css">
+
+    </head>
+    <body>
+        <div id="navBar">
+            <header>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
+                    <div class="hamburger" id="navBurger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+               
+                <div class="navOpns">
+                    <ul class="navUL visibilityToggle">
+                        <li class="activeNav"><a href="index.html">Home</a></li>
+                        <li class="notActive"><a href="about.html">About</a></li>
+                        <li class="notActive"><a href="projects.html">Projects</a></li>
+                        <li class="notActive"><a href="contact.html">Contact</a></li>
+                    </ul> 
+                </div>
+            </header>
+        </div>
+        <div id="mainPage">
+            <div class="welcomeContent">
+                <div class="welcomeContentText">
+                    <h3>Hello, I am</h3>
+                    <h1>Ali Haider</h1>
+                    <p>Welcome to my website.</p>
+                </div>
+            </div>
+        </div>
+        <div id="aboutPage">
+            <div class="aboutContent">
+                <div class="aboutPic"></div>
+                <div class="aboutInfo">
+                    <h1>About Me</h1>
+                    <p>Hi. I'm Ali Haider and I am 20 years old. I am
+                        from Massachusetts and I'm currently a student at
+                        The University of Massachusetts Lowell. I am a junior
+                        and studying computer science.</p>
+                    <p>I was assigned to make a website for my GUI class
+                        and this is the website I am making.
+                        I will be updating this website as I keep
+                        learning more. This website is currently on
+                        version 3.0. If you want to see the previous
+                        2 versions, then check out assignment 2 and 4.</p>
+                   <a href="#contactPage"><button type="button" name="button" class="btn">Contact Me</button></a> 
+                </div>
+            </div>
+        </div>
+        <div id="projectPage">
+            <div class="projectContainer">
+                <div class="projectNavBar ">
+                    <div class="projectNavBarHeader">
+                        <h1>Portfolio</h1>
+                        <div class="hamburger" id="projBurger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <ul class="projUL visibilityToggle">
+                            <li class="liClass guiHeader active" onclick="onClick(event, 'GUI')">GUI Projects</li>
+                            <li class="liClass persoanlHeader" onclick="onClick(event, 'perosnalProjects')">Personal Projects</li>
+                            <li class="liClass cssHeader" onclick="onClick(event, 'CSS')">CSS</li>
+                            <!-- <li class="liClass jsHeader" onclick="onClick(event, 'Javascript')">Javascript</li> -->
+                            <!-- <li class="liClass webHeader" onclick="onClick(event, 'webTemp')">Web Templates</li> -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- add each Project class to cssMain -->
+                <div class="projects GUI visible" id="GUI">
+                   <!-- homework 2 -->
+                    <div class="card">
+                        <a href="guiProjects/hw2/index.html" target="_blank">
+                        <div class="cardHeader">
+                            <img src="images/thumbnails/hw2.png" alt="Card thumbnail" class="thumbnail">
+                            <div class="btnContianer">
+                                <div class="plusBtn" >
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div></a>
+                        <a href="guiProjects/hw2/index.html" target="_blank"><h1 class="titleHeading">Homework 2</h1></a> 
+                        <div class="description">
+                            <p class="date">Sept 22 2020</p>
+                        </div>
+                    </div>
+                    <!-- homework 3 -->
+                    <div class="card">
+                        <a href="guiProjects/hw3/index.html" target="_blank">
+                        <div class="cardHeader">
+                            <img src="images/thumbnails/hw3.png" alt="Card thumbnail" class="thumbnail">
+                            <div class="btnContianer">
+                                <div class="plusBtn" >
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div></a>
+                        <a href="guiProjects/hw3/index.html" target="_blank"><h1 class="titleHeading">Homework 3</h1></a> 
+                        <div class="description">
+                            <p class="date">Sept 28 2020</p>
+                        </div>
+                    </div>
+                    <!-- homework 4 -->
+                    <div class="card">
+                        <a href="guiProjects/hw4/index.html" target="_blank">
+                        <div class="cardHeader">
+                            <img src="images/thumbnails/hw4.png" alt="Card thumbnail" class="thumbnail">
+                            <div class="btnContianer">
+                                <div class="plusBtn" >
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div></a>
+                        <a href="guiProjects/hw4/index.html" target="_blank"><h1 class="titleHeading">Homework 4</h1></a> 
+                        <div class="description">
+                            <p class="date">Oct 15 2020</p>
+                        </div>
+                    </div>
+                    <!-- homework 5 -->
+                    <div class="card">
+                        <a href="guiProjects/hw5/index.html" target="_blank">
+                        <div class="cardHeader">
+                            <img src="images/thumbnails/hw5.png" alt="Card thumbnail" class="thumbnail">
+                            <div class="btnContianer">
+                                <div class="plusBtn" >
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div></a>
+                        <a href="guiProjects/hw5/index.html" target="_blank"><h1 class="titleHeading">Homework 5</h1></a> 
+                        <div class="description">
+                            <p class="date">Oct 29 2020</p>
+                        </div>
+                    </div>
+                    <div class="viewMore">
+                        <button>View More</button>
+                    </div>
+                </div>
+                <div class="projects perosnalProjects" id="perosnalProjects">
+                    <div class="comingSoon">
+                        <p>Hmmm. Seems like nothing has been uploaded here yet.</p>
+                        <h1>Coming Soon!</h1>
+                    </div>
+                </div>
+                <div class="projects cssProjects" id="CSS">
+                    <div class="comingSoon">
+                        <p>Hmmm. Seems like nothing has been uploaded here yet.</p>
+                        <h1>Coming Soon!</h1>
+                    </div>
+                </div>
+                <!-- <div class="projects jsProjects" id="Javascript">
+                    <div class="card">
+                        <div class="cardHeader">
+                            <img src="images/thumbnails/default1.png" alt="Card thumbnail" class="thumbnail">
+                            <div class="btnContianer">
+                                <div class="plusBtn" >
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="titleHeading">Default Title</h1>
+                        <div class="description">
+                            <p class="date">Oct 27 2020</p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="cardHeader">
+                            <img src="images/thumbnails/default1.png" alt="Card thumbnail" class="thumbnail">
+                            <div class="btnContianer">
+                                <div class="plusBtn" >
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="titleHeading">Default Title</h1>
+                        <div class="description">
+                            <p class="date">Oct 27 2020</p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="cardHeader">
+                            <img src="images/thumbnails/default1.png" alt="Card thumbnail" class="thumbnail">
+                            <div class="btnContianer">
+                                <div class="plusBtn" >
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="titleHeading">Default Title</h1>
+                        <div class="description">
+                            <p class="date">Oct 27 2020</p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="cardHeader">
+                            <img src="images/thumbnails/default1.png" alt="Card thumbnail" class="thumbnail">
+                            <div class="btnContianer">
+                                <div class="plusBtn" >
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="titleHeading">Default Title</h1>
+                        <div class="description">
+                            <p class="date">Oct 27 2020</p>
+                        </div>
+
+                    </div>
+                </div> -->
+                <!-- <div class="projects webProjects" id="webTemp">
+                    <div class="card">
+                        <div class="cardHeader">
+                            <img src="images/thumbnails/default1.png" alt="Card thumbnail" class="thumbnail">
+                            <div class="btnContianer">
+                                <div class="plusBtn" >
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="titleHeading">Default Title</h1>
+                        <div class="description">
+                            <p class="date">Oct 27 2020</p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="cardHeader">
+                            <img src="images/thumbnails/default1.png" alt="Card thumbnail" class="thumbnail">
+                            <div class="btnContianer">
+                                <div class="plusBtn" >
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="titleHeading">Default Title</h1>
+                        <div class="description">
+                            <p class="date">Oct 27 2020</p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="cardHeader">
+                            <img src="images/thumbnails/default1.png" alt="Card thumbnail" class="thumbnail">
+                            <div class="btnContianer">
+                                <div class="plusBtn" >
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="titleHeading">Default Title</h1>
+                        <div class="description">
+                            <p class="date">Oct 27 2020</p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="cardHeader">
+                            <img src="images/thumbnails/default1.png" alt="Card thumbnail" class="thumbnail">
+                            <div class="btnContianer">
+                                <div class="plusBtn" >
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="titleHeading">Default Title</h1>
+                        <div class="description">
+                            <p class="date">Oct 27 2020</p>
+                        </div>
+
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div id="contactPage">
+            <div class="contactContainer">
+                <div class="contactInfo">
+                    <div class="contactInfoHeader">
+                        <h1>Got a question or want to talk? Feel free to <span>contact me!</span></h1>
+                    </div>
+                    <div class="socialLink hideInMobile">
+                        <h3>Email</h3>
+                        <p><a href="mailto:ali_haider@student.uml.edu">ali_haider@student.uml.edu</a></p>
+                        <p><a href="mailto:haider0612@gmail.com">haider0612@gmail.com</a></p>
+                        <div class="socialIcons">
+                            <a href="https://www.instagram.com/its_alihaider/" target="_blank"><img src="images/icons/ig.svg" alt="INSTAGRAM icon"></a>
+                            <a href="https://www.github.com/haydher/" target="_blank"><img src="images/icons/github.svg" alt="GITHUB icon"></a>
+                            <a href="mailto:ali_haider@student.uml.edu" target="_blank"><img src="images/icons/email.svg" alt="Email icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form action="https://getform.io/f/2144eacb-dda4-45e1-9da9-33790bb39afa" method="post">
+                        <input type="text" id="fName" name="fname" placeholder="First Name"><br>
+                        <input type="text" id="lName" name="lname" placeholder="Last Name"><br>
+                        <input type="text" id="email" name="email" placeholder="Email"><br>
+                        <textarea id="textArea" name="text" placeholder="Message"></textarea><br>
+                        <input type="submit"  class="btn" value="SUBMIT">
+                    </form>
+                </div>
+
+                </div>
+        </div>
+        </div>
+        <footer>
+            <div class="footerContainer">
+                <div class="logoFooter">
+                    <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
+                </div>
+                <div class="footerLinks">
+                    <ul class="footNavLinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                    <div class="socialIcons showInMobile">
+                        <a href="https://www.instagram.com/its_alihaider/" target="_blank"><img src="images/icons/ig.svg" alt="INSTAGRAM icon"></a>
+                        <a href="https://www.github.com/haydher/" target="_blank"><img src="images/icons/github.svg" alt="GITHUB icon"></a>
+                        <a href="mailto:ali_haider@student.uml.edu" target="_blank"><img src="images/icons/email.svg" alt="Email icon"></a>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright 2020 - Ali Haider</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="javascript/script.js" charset="utf-8"></script>
+</html>
