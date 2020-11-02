@@ -1,0 +1,242 @@
+<!--
+ File: https://cs.uml.edu/~ahaider/guiProjects/hw4/index.html
+ Assignment: Remaking the portfolio with bootstrap
+ Ali Haider, UMass Lowell Computer Science, ali_haider@student.uml.edu
+ Copyright (c) 2020 by Ali Haider. All rights reserved. May be
+ freely copied or excerpted for educational purposes with credit to the
+ author.
+ Updated by Ali Haider on Oct 12, 2020 at 4:00 AM
+
+Sources:
+Contact form: https://bootsnipp.com/snippets/35VBm
+Cards:  https://getbootstrap.com/docs/4.0/components/card/
+-->
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
+    <title>Bootstrap Homework</title>
+</head>
+<body>
+    <section id="mainPage">
+        <nav class="navbar navbar-expand-md sticky-top navbar-light shadow-sm p-3 bg-white rounded">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img alt="Logo" class="logo navbar-brand" src="images/logo.svg" width="200">
+                </a>
+                <button class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="nav navbar-nav navbar-right collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li>
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#aboutPage">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#projectPage">Projects</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contactMe">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center welcomeAbout">
+                <h1>Hey there, I'm <span>Ali.</span></h1>
+                <h3>Welcome to my portfolio website!</h3>
+            </div>
+        </div>
+    </section>
+    <section id="aboutPage">
+        <div class="jumbotron jumbotron-fluid text-center shadow">
+            <h3>About Me</h3>
+        </div>
+        <div class="container w-50 bg-light shadow mb-4">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-12 col-lg-6 p-4">
+                    <p>Hi. I'm Ali Haider and I am 20 years old. I'm currently studying computer science at the University Of Massachusetts Lowell and I'm in my junior year of college. This assignment is for my Graphical User Interface class for the fall of 2020 and we have to update this website as we learn more throughout the semester.</p><a href="#contactInfoPage">
+                    <div class="btn btn-primary shadow">
+                        Contact Me
+                    </div></a>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 p-0">
+                    <img alt="personal picture" src="images/personalPic.jpg" width="100%">
+                </div>
+            </div>
+        </div><br>
+        <br>
+    </section>
+    <section id="projectPage">
+        <div class="jumbotron jumbotron-fluid text-center shadow">
+            <h3>Projects</h3>
+        </div>
+        <div class="container text-center mb-4">
+            <h4>GUI Projects</h4>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="card col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Homework 1</h5>
+                        <p class="card-text">Getting started with the class.</p>
+                        <a class="btn btn-primary shadow" href="guiProjects/hw1.rar">Download</a>
+                    </div>
+                </div>
+                <div class="card col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Homework 2 portfolio</h5>
+                        <p class="card-text">Make a portfolio website that holds are all the projects done in the class.</p>
+                        <a class="btn btn-primary shadow" href="https://cs.uml.edu/~ahaider/index.html" target="_blank">Open</a>
+                        <a class="btn btn-primary shadow" href="guiProjects/hw2.rar">Download</a>
+                    </div>
+                </div>
+                <div class="card col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Homework 3 CSS</h5>
+                        <p class="card-text">Style a raw HTML file using CSS without changing the original HTML file.</p>
+                        <a class="btn btn-primary shadow" href="https://cs.uml.edu/~ahaider/guiProjects/hw3/" target="_blank">Open</a>
+                        <a class="btn btn-primary shadow" href="guiProjects/hw3.rar">Download</a>
+                    </div>
+                </div>
+                <div class="card col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Homework 4 Bootstrap</h5>
+                        <p class="card-text">Remake the portfolio website from Homework 2 using Bootstrap.</p>
+                        <a class="btn btn-primary" href="https://cs.uml.edu/~ahaider/guiProjects/hw4/index.html" target="_blank">Open</a>
+                        <a class="btn btn-primary" href="guiProjects/hw4.rar">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center mb-4 mt-4">
+            <h4>Personal Projects</h4>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="card col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a class="btn btn-primary" href="#">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a class="btn btn-primary" href="#">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a class="btn btn-primary" href="#">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a class="btn btn-primary" href="#">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section id="contactMe">
+        <div class="jumbotron jumbotron-fluid text-center shadow">
+            <h3>Contact Me</h3>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6 pb-5">
+                <form action="https://api.formcubes.com/reg/v1/s/reg_8v17xs10kfdbq0q8" method="post">
+                    <div class="card shadow rounded-0">
+                        <div class="card-header p-0">
+                            <div class="text-white text-center py-2" style="background: #3e9c87">
+                                <h3>Got Questions?</h3>
+                                <p class="m-0">Send a message!</p>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <input class="form-control" id="fName" name="fname" placeholder="First Name" required="" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <input class="form-control" id="lName" name="lname" placeholder="Last Name" required="" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <input class="form-control" id="email" name="email" placeholder="youremail@email.com" required="" type="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <textarea class="form-control" id="textArea" name="text" placeholder="Please enter your message." required=""></textarea>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <input class="btn btn-info align-self-start rounded py-2" type="submit" value="SUBMIT">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section><!-- source for footer: https://mdbootstrap.com/docs/jquery/navigation/footer/ -->
+    <section id="footer">
+        <footer class="page-footer font-small indigo">
+            <div class="container">
+                <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase"><a href="https://cs.uml.edu/~ahaider/guiProjects/hw4/index.html">Home</a></h6>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase"><a href="#aboutPage">About</a></h6>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase"><a href="#projectPage">Projects</a></h6>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <h6 class="text-uppercase"><a href="#contactMe">Contact Me</a></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-2">
+                <div class="col-md-12 contactImg d-flex justify-content-center">
+                    <a href="https://www.instagram.com/its_alihaider/" target="_blank">
+                        <img alt="INSTAGRAM icon" src="images/icons/ig.svg">
+                    </a>
+                    <a href="https://www.github.com/haydher/" target="_blank">
+                        <img alt="GITHUB icon" src="images/icons/github.svg">
+                    </a>
+                    <a href="mailto:ali_haider@student.uml.edu" target="_blank">
+                        <img alt="Email icon" src="images/icons/email.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-3">
+                © 2020 Copyright: <a href="https://cs.uml.edu/~ahaider/">Ali Haider</a>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

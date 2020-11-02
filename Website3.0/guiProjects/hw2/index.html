@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!--
+ File: /ahaider/index.html
+ Assignment: Creating Your First Web Page
+ Ali Haider, UMass Lowell Computer Science, ali_haider@student.uml.edu
+ Copyright (c) 2020 by Ali Haider. All rights reserved. May be
+ freely copied or excerpted for educational purposes with credit to the
+ author.
+ Updated by Ali Haider on September 20, 2020 at 9:00 PM
+-->
+
+<!-- class - dMbPh = dark mode body place placeholder
+             dMpH = dark mode place holder
+ -->
+<html lang="en">
+<head>
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Personal Resume</title>
+</head><!-- -->
+<body class="dMbPh dMpH">
+    <!-- the container that holds everything for first page -->
+    <section id="mainPage">
+        <header class="dMbPh">
+            <!-- the container to hold all the navBar -->
+            <div class="navBar">
+                <a href="index.html"><img alt="Logo" class="logo" src="images/logo.svg"></a>
+                <nav>
+                    <!-- nav links -->
+                    <ul class="navLinks dMbPh">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#aboutPage">About</a></li>
+                        <li><a href="#skillsPage">Skills</a></li>
+                        <li><a href="#projectPage">Projects</a></li>
+                        <li><a href="#contactInfoPage">Contact Me</a></li>
+                    </ul>
+                </nav>
+                <!-- dark mode toggle doesnt work yet, didnt have enough time
+                    to implement it -->
+                <div class="darkModeToggle">
+                    <img  class="darkModeImg" src="images/darkMode.svg" alt="darkMode">
+                    <p>Dark Theme</p>
+                </div>
+            </div>
+        </header>
+        <!-- hold the content of the main page -->
+        <section id="welcomeContainer">
+            <div class="welcomeContent">
+                <div class="aboutInfo dMpH">
+                    <h1>Hey there, I'm <span>Ali.</span> </h1>
+                    <h4>Welcome to my portfolio website!</h4>
+                </div>
+                <img alt="Cover Image" class="coverImg" src="images/coverImg.svg">
+            </div>
+        </section>
+    </section>
+    <!-- Contetn to add about me -->
+    <section id="aboutPage" class="dMbPh">
+        <!-- seperate header to align in properly -->
+        <div class="aboutHeader">
+            <h1>About Me</h1>
+        </div>
+        <div class="aboutContent dMbPh dMpH">
+            <div class="aboutContentInfo">
+                <p>Hi. I'm Ali Haider and I am 20 years old. I'm currently
+                    studying computer science at the University Of
+                    Massachusetts Lowell and I'm in my
+                    junior year of college. This assignment is for
+                    my Graphical User Interface class for the fall
+                    of 2020 and we have to update this website as
+                    we learn more throughout the semester.</p>
+                    <a href="#contactInfoPage"><div class="btn">Contact Me</div></a>
+            </div>
+            <img src="images/personalPic.jpg" alt="personal picture"><br>
+
+        </div>
+    </section>
+    <!-- skills page -->
+    <!-- skill bar is done by using one parent div of 100% and
+        the loaded bar by adding the % i know -->
+    <section id="skillsPage" class="dMbPh ">
+        <div class="skillsHeader">
+            <h1>Skills</h1>
+        </div>
+        <div class="skillsContainer">
+            <div class="html ">
+                <img src="images/icons/html.svg" alt="HTML icon">
+                <h2>HTML</h2>
+                <div class="loadingBar">
+                    <div class="barFull"></div>
+                </div>
+            </div>
+            <div class="css line">
+                <img src="images/icons/css.svg" alt="CSS icon">
+                <h2>CSS</h2>
+                <div class="loadingBar">
+                    <div class="barFull"></div>
+                </div>
+            </div>
+            <div class="js line">
+                <img src="images/icons/js.svg" alt="JavaScript icon">
+                <h2>JavaScript</h2>
+                <div class="loadingBar">
+                    <div class="barFull"></div>
+                </div>
+            </div>
+            <div class="c line">
+                <img src="images/icons/c.svg" alt="C icon">
+                <h2>C</h2>
+                <div class="loadingBar">
+                    <div class="barFull"></div>
+                </div>
+            </div>
+            <div class="cpp line">
+                <img src="images/icons/cpp.svg" alt="C++ icon">
+                <h2>C++</h2>
+                <div class="loadingBar">
+                    <div class="barFull"></div>
+                </div>
+            </div>
+            <div class="ps line">
+                <img src="images/icons/ps.svg" alt="Adobe PhotoShop icon">
+                <h2>Adobe PhotoShop</h2>
+                <div class="loadingBar">
+                    <div class="barFull"></div>
+                </div>
+            </div>
+            <div class="pr line">
+                <img src="images/icons/pr.svg" alt="Adobe Premiere icon">
+                <h2>Adobe Premiere</h2>
+                <div class="loadingBar">
+                    <div class="barFull"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- project page -->
+    <!-- has two seperate divs, one for my the class Projects and
+        one for my personal projects  -->
+    <section id="projectPage" class="dMpH">
+        <div class="guiHeader">
+            <h1>GUI Projects</h1>
+        </div>
+        <!-- the boxes are desgined by using flexbox -->
+        <div class="guiProjectContainer dMbPh">
+            <!-- all boxes hold the project links, the one that are
+                    done has been linked, the rest doesnt work yet -->
+            <div class="box hwDone">
+                <h1>Homework 1</h1>
+                <p class="boxP">Setting up the course.</p>
+                <div class="boxHover">
+                    <div class="openProjBtn">
+                        <a href="guiProjects/hw1.rar" download><p>Download</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box hwDone">
+                <h1>Homework 2</h1>
+                <p class="boxP">Make portfolio website (this website).</p>
+                <div class="boxHover">
+                    <div class="openProjBtn">
+                        <a href="index.html"><p>Open</p></a>
+                        <a href="guiProjects/hw2.rar" download><p>Download</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box hwDone">
+                <h1>Homework 3</h1>
+                <p class="boxP">Style CSS without changing HTML.</p>
+                <div class="boxHover">
+                    <div class="openProjBtn">
+                        <a href="guiProjects/hw3/" target="_blank"><p>Open</p></a>
+                        <a href="guiProjects/hw3.rar" download><p>Download</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box hwDone">
+                <h1>Homework 4</h1>
+                <p class="boxP">Remaking the portfolio with Bootstrap.</p>
+                <div class="boxHover">
+                    <div class="openProjBtn">
+                        <a href="guiProjects/hw4/" target="_blank"><p>Open</p></a>
+                        <a href="guiProjects/hw4.rar"><p>Download</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Project 5</h1>
+                <div class="boxHover">
+                    <div class="openProjBtn">
+                        <a href="#"><p>Open</p></a>
+                        <a href="#"><p>Download</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Project 6</h1>
+                <div class="boxHover">
+                    <div class="openProjBtn">
+                        <a href="#"><p>Open</p></a>
+                        <a href="#"><p>Download</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Project 7</h1>
+                <div class="boxHover">
+                    <div class="openProjBtn">
+                        <a href="#"><p>Open</p></a>
+                        <a href="#"><p>Download</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Project 8</h1>
+                <div class="boxHover">
+                    <div class="openProjBtn">
+                        <a href="#"><p>Open</p></a>
+                        <a href="#"><p>Download</p></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- pretty much same as gui project -->
+        <div class="personalProjHeader">
+            <h1>Personal Projects</h1>
+        </div>
+        <div class="personalProjContainer">
+            <div class="box">
+                <h1>Project 1</h1>
+                <div class="boxHover">
+                    <div class="openProjBtn">
+                        <a href="#"><p>Open</p></a>
+                        <a href="#"><p>Download</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Project 2</h1>
+                <div class="boxHover">
+                    <div class="openProjBtn">
+                        <a href="#"><p>Open</p></a>
+                        <a href="#"><p>Download</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Project 3</h1>
+                <div class="boxHover">
+                    <div class="openProjBtn">
+                        <a href="#"><p>Open</p></a>
+                        <a href="#"><p>Download</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Project 4</h1>
+                <div class="boxHover">
+                    <div class="openProjBtn">
+                        <a href="#"><p>Open</p></a>
+                        <a href="#"><p>Download</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Project 5</h1>
+                <div class="boxHover">
+                    <div class="openProjBtn">
+                        <a href="#"><p>Open</p></a>
+                        <a href="#"><p>Download</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Project 6</h1>
+                <div class="boxHover">
+                    <div class="openProjBtn">
+                        <a href="#"><p>Open</p></a>
+                        <a href="#"><p>Download</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Project 7</h1>
+                <div class="boxHover">
+                    <div class="openProjBtn">
+                        <a href="#"><p>Open</p></a>
+                        <a href="#"><p>Download</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Project 8</h1>
+                <div class="boxHover">
+                    <div class="openProjBtn">
+                        <a href="#"><p>Open</p></a>
+                        <a href="#"><p>Download</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contect info -->
+    <section id="contactInfoPage" class="dMpH">
+        <div class="contactInfoHeader">
+            <p>Got questions?</p>
+            <h1>Contact Me</h1>
+        </div>
+        <!-- although im not using php or any other backend yet, im using a free
+            website taht allows me to get forms -->
+        <!-- the forms dont have any validation yet so u can send whatever but
+            ill implement it soon -->
+        <div class="formContainer">
+            <form action="https://api.formcubes.com/reg/v1/s/reg_8v17xs10kfdbq0q8" method="post">
+                <input type="text" id="fName" name="fname" placeholder="First Name"><br>
+                <input type="text" id="lName" name="lname" placeholder="Last Name"><br>
+                <input type="text" id="email" name="email" placeholder="Email"><br>
+                <textarea id="textArea" name="text" placeholder="Message"></textarea><br>
+                <input type="submit"  class="btn" value="SUBMIT">
+            </form>
+        </div>
+    </section>
+
+    <!-- footer to hold the info about social, links for nav bar and the css validation -->
+    <section id="footer">
+        <div class="socialIcons">
+            <a href="https://www.instagram.com/its_alihaider/" target="_blank"><img src="images/icons/ig.svg" alt="INSTAGRAM icon"></a>
+            <a href="https://www.github.com/haydher/" target="_blank"><img src="images/icons/github.svg" alt="GITHUB icon"></a>
+            <a href="mailto:ali_haider@student.uml.edu" target="_blank"><img src="images/icons/email.svg" alt="Email icon"></a>
+        </div>
+        <div class="footerNav">
+            <ul class="footNavLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#aboutPage">About</a></li>
+                <li><a href="#skillsPage">Skills</a></li>
+                <li><a href="#projectPage">Projects</a></li>
+                <li><a href="#contactInfoPage">Contact Me</a></li>
+                <li><p>
+                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fcs.uml.edu%2F%7Eahaider%2F" target="_blank">
+                    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+                    </a>
+                </p>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2020 - Ali Haider</p>
+        </div>
+    </section>
+    <script src="javascript/script.js" charset="utf-8"></script>
+</body>
+</html>

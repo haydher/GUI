@@ -1,0 +1,525 @@
+/*
+File: /ahaider/index.html
+Assignment: Creating Your First Web Page
+Ali Haider, UMass Lowell Computer Science, ali_haider@student.uml.edu
+Copyright (c) 2020 by Ali Haider. All rights reserved. May be
+freely copied or excerpted for educational purposes with credit to the
+author.
+Updated by Ali Haider on September 20, 2020 at 9:00 PM
+*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* clears the margin and padding for the site */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* my links jump on a specific part of the page,
+so this just helps make it smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #edf0f1;
+}
+
+a, a:link, a:visited  {
+    text-decoration: none;
+    color: white;
+}
+
+/* there are some fadin animations on the main page so
+    i have the the animation done here */
+@keyframes fadein {
+    0% {
+        transform: translate(0, 10px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+
+#mainPage {
+    height: 100vh;
+    width: auto;
+}
+
+/*  */
+header {
+    height: 6%;
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    animation: fadein 1s ease 0s;
+    z-index: 20;
+    box-shadow: 7px 7px 10px 0px rgba(0,0,0, 0.23);
+}
+
+.navBar {
+    display: flex;
+    width: 70%;
+    max-width: 1440px;
+    height: 100%;
+    margin: auto;
+    padding: 0 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+nav {
+    width: 34%;
+}
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 16px;
+}
+.navLinks a {
+    color: #3f3d56;
+}
+
+.navLinks a:hover {
+    border-bottom: 2px solid #3f3d56;
+}
+/* toggles dark mode for the website, but not working yet */
+.darkModeImg {
+    height: 17px;
+    padding-right: 5px;
+}
+
+.darkModeToggle {
+    background-color: #3e9c87;
+    color: #3f3d56;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 160px;
+    padding: 8px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition:1s ease;
+}
+.darkActive {
+    transition:1s ease;
+    background-color: #3f3d56;
+}
+.darkActive p {
+    color: white;
+    font-weight: normal;
+}
+#welcomeContainer {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    max-width: 1440px;
+    height: 100%;
+    margin: auto;
+}
+
+.welcomeContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.aboutInfo {
+    height: 30vh;
+    color: #24252a;
+    line-height: 1.5;
+    animation: fadein 1s ease 0s;
+}
+
+.aboutInfo h1 {
+    color: #3f3d56;
+    font-size: 56px;
+}
+.aboutInfo h4 {
+    color: #3f3d56;
+    font-size: 20px;
+}
+span {
+    color: #3e9c87;
+}
+
+.coverImg {
+    max-height: 40vh;
+    animation: fadein 1s ease 0s;
+}
+
+#aboutPage {
+    max-width: 700px;
+    height: 50vh;
+    margin: auto;
+}
+
+.aboutHeader {
+    display: grid;
+    height: 20%;
+}
+
+.aboutHeader h1{
+    border-bottom: 2px solid  #3f3d56;
+    margin: auto;
+    font-size: 20px;
+}
+
+.aboutContent {
+    height: 80%;
+    display: flex;
+    box-shadow: 7px 7px 10px 0px rgba(0,0,0, 0.23);
+    background-color: white;
+}
+.aboutContentInfo {
+    width: 60%;
+    padding: 3%;
+    font-size:18px;
+    line-height: 1.7;
+}
+
+.aboutContentInfo .btn{
+    width: 150px;
+    font-size: 16px;
+    margin-top: 5%;
+    padding: 10px;
+}
+
+
+.aboutContent img {
+    height: 100%;
+}
+
+#skillsPage {
+    margin: auto;
+    padding-top: 5%;
+    width: 70vw;
+    max-width: 1440px;
+}
+
+.skillsHeader {
+    display: flex;
+    height: 100px;
+}
+
+.skillsHeader h1{
+    border-bottom: 2px solid  #3f3d56;
+    margin: auto;
+    font-size: 20px;
+}
+.skillsContainer{
+    width: 70%;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 0 2% 0;
+}
+
+.skillsContainer div {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    position: relative;
+}
+
+.skillsContainer div img{
+    height: 50px;
+    margin-right: 1%;
+}
+
+.skillsContainer h2 {
+    font-size: 16px;
+    width: 25%;
+    margin-left: 1%;
+}
+.skillsContainer .loadingBar {
+    background-color: #24252a;
+    padding: 0;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 7px 7px 10px 0px rgba(0,0,0, 0.23);
+}
+
+.skillsContainer .barFull {
+    background-color: #3e9c87;
+    height: 18px;
+    width: 80%;
+    padding: 0;
+    border-radius: 50px;
+}
+
+.css .barFull{
+    width: 70%;
+}
+.js .barFull{
+    width: 20%;
+}
+.c .barFull{
+    width: 60%;
+}
+.cpp .barFull{
+    width: 70%;
+}
+.ps .barFull{
+    width: 80%;
+}
+.pr .barFull{
+    width: 60%;
+}
+
+
+/* the main container of the page */
+#projectPage {
+    margin: 5% auto 0 auto;
+    max-width: 1440px;
+}
+
+/* container that hold the title of the page */
+.guiHeader, .personalProjHeader {
+    display: flex;
+    height: 180px;
+}
+/* styling the actual headers */
+.guiHeader h1, .personalProjHeader h1 {
+    border-bottom: 2px solid  #3f3d56;
+    margin: auto;
+    font-size: 20px;
+}
+/* holds both the GUI and Projects page "boxes" */
+.guiProjectContainer, .personalProjContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1em;
+    width: 70%;
+    margin: auto;
+    font-size: 16px;
+}
+
+/* makes the boxes where u can upload the assignments */
+.box {
+    display: grid;
+    position: relative;
+    height: 150px;
+    color: white;
+    background-color: #3e9c87;
+    cursor: pointer;
+    box-shadow: 7px 7px 10px 0px rgba(0,0,0, 0.23);
+    overflow: hidden;
+}
+
+/* class just to add to the boxes that already has assignment
+associated with it so the hover feature doesnt apply to all the boxes */
+/* also used to center the header of the box same as the rest ofthe boxes */
+.hwDone {
+    padding-top: 60px;
+    background-color:  #3e9c87;
+}
+
+/* styles the header fo the box */
+.box h1, .boxP {
+    margin: auto;
+    text-align: center;
+    font-weight: normal;
+}
+/* class for the boxes that has a description associate with Them.
+boxP = Box with the tag <P> in it. */
+.boxP {
+    background-color: rgba(0,0,0, 0.3);
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+/* box that contains the "Open" and "Downlaod" buttons. */
+/* made absoluteso its out of the way and only comes up when hover */
+.boxHover {
+    background:  rgba(255, 255, 255, 0.9);
+    position: absolute;
+    bottom: -150px;
+    height: 100%;
+    width: 100%;
+    transform: translateY(0px);
+    transition: 0.4s ease-in-out;
+}
+/* the buttons that open or download the project */
+.openProjBtn {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 10% 0;
+}
+/* styles the buttons */
+.boxHover p {
+    color:  #3e9c87;
+    padding: 10px;
+    width: 40%;
+    margin: auto;
+    border: 2px solid #3e9c87;
+    border-radius: 20px;
+}
+/* hover feature, when hover over the MAIN box it bring up the
+Open and Download button from the bottom of the div */
+.hwDone:hover .boxHover{
+    transform: translateY(-150px);
+}
+
+#contactInfoPage {
+    height: auto;
+    padding-bottom: 1%;
+    margin-top: 5%;
+}
+
+.contactInfoHeader {
+    display: grid;
+    padding: 2% 0;
+}
+
+.contactInfoHeader h1, .contactInfoHeader p {
+    margin: 5px auto;
+}
+.contactInfoHeader h1 {
+    border-bottom: 2px solid  #3f3d56;
+}
+
+.formContainer {
+    width: 20%;
+    margin: auto;
+}
+
+#fName, #lName, #email, #textArea {
+    width: 100%;
+    font-size: 18px;
+    color: #3f3d56;
+    padding: 10px;
+    margin: 2% auto;
+    outline:none;
+    border: 0;
+    border-bottom: 2px solid  #3f3d56;
+}
+
+#textArea {
+    min-height: 200px;
+    resize: none;
+}
+
+::-webkit-input-placeholder {
+    color: #3f3d56;
+}
+::-moz-input-placeholder {
+    color: #3f3d56;
+}
+::-ms-input-placeholder {
+    color: #3f3d56;
+}
+.btn {
+    background: #3e9c87;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 19px;
+    border: 0;
+    border-radius: 70px;
+    color: #3f3d56;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 7px 7px 10px 0px rgba(0,0,0, 0.23);
+}
+
+.btn:hover {
+    color:  #3e9c87;
+    background: #3f3d56;
+    transition: 0.2s ease;
+}
+
+#footer {
+    background-color: #24252a;
+    color: white;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    margin: auto;
+}
+.socialIcons img {
+    height: 40px;
+
+}
+
+.footerNav {
+    width: 550px;
+    margin: auto;
+}
+
+.footNavLinks {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+}
+
+.footNavLinks a, .footNavLinks a:link, .footNavLinks a:visited  {
+    text-decoration: none;
+    color: #edf0f1;
+    font-weight: normal;
+    transition: 0.2s ease;
+
+}
+.footNavLinks a:hover  {
+    color: #3e9c87;
+    transition: 0.2s ease;
+}
+.copyright {
+    margin-top: 10px;
+    padding: 12px 0;
+}
+.copyright p {
+    font-size: 14px;
+    width: 170px;
+    margin: auto;
+    color: #edf0f1;
+}
+
+
+.darkMode, .darkMode p, .darkMode a,
+.darkMode h1, .darkMode h2, .darkMode h3
+, .darkMode h4, .darkMode li, .darkMode form{
+    color: #d1cdc7 !important;
+    transition: 0.5s ease;
+}
+.darkModeBody{
+    background-color: #111d21 !important;
+    transition: 0.5s ease;
+}
+
+.darkModeBody .boxHover {
+    background: rgba(17, 29, 33, 0.9);
+}
+
+/* colors
+#3e9c87
+#edf0f1
+#24252a
+ */
