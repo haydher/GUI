@@ -1,0 +1,134 @@
+<!--
+File: https://cs.uml.edu/~ahaider/guiProjects/hw5/index.html
+ Assignment: Multiplication table using javascript
+ Ali Haider, UMass Lowell Computer Science, ali_haider@student.uml.edu
+ Copyright (c) 2020 by Ali Haider. All rights reserved. May be
+ freely copied or excerpted for educational purposes with credit to the
+ author.
+Updated by Ali Haider on Nov 4, 2020 at 9:00 pm  -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>HW5 Multiplication Table</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+         
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+ 
+         <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+
+        
+    </head>
+    <body>
+        <section id="mainPage">
+        <nav class="navbar navbar-expand-md sticky-top navbar-light p-3 bg-white rounded">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img alt="Logo" class="logo navbar-brand" src="images/logo.svg" width="200">
+                </a>
+                <button class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="nav navbar-nav navbar-right collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li>
+                            <a class="nav-link active" href="https://haydher.github.io/GUI/Hw4" target="_blank">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="https://haydher.github.io/GUI/Hw4/#aboutPage" target="_blank">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="https://haydher.github.io/GUI/Hw4/#projectPage" target="_blank">Projects</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="https://haydher.github.io/GUI/Hw4/#contactMe" target="_blank">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </section>
+        <section id="content">
+            <div class="container-fluid shadow p-3 pl-4 bg">
+                <h3>Multiplication Table Generator</h3>
+            </div>
+            <div class="row">
+                <div class="border rounded mx-auto mt-5 p-0 col-11 col-sm-11 col-md-9 col-lg-6" >
+                    <div class="card-header" style="width:100%;">
+                        <p class="card-tex">Please enter any number to generate a multiplication table.</p>
+                    </div>
+                    <form class="p-3">
+                        <div class="form-group">
+                            <label>Minimum Column Value</label>
+                            <input type="number" class="minXValue form-control mb-3" id="minXValue" name="minXValue" placeholder="Enter minimum X Value" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Maximum Column Value</label>
+                            <input type="number" class="maxXValue form-control mb-3" name="maxXValue" placeholder="Enter maximum X Value" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Minimum Row Value</label>
+                            <input type="number" class="minYValue form-control mb-3" id="minYValue" name="minYValue" placeholder="Enter minimum Y Value" required>
+                        </div>
+                        <div class="form-group">
+                        <label>Minimum Row Value</label>
+                        <input type="number" class="maxYValue form-control" name="maxYValue" placeholder="Enter maximum Y Value" required>
+                        </div>
+                        <br>
+                        <button type="submit" class="subBtn " name="button">Submit</button>
+                        <!-- <input type="submit" class="subBtn " name="button">Submit</input> -->
+                        <button type="reset" class="resetBtn" name="button">Reset</button>
+                    </form>
+                    <div class="container-fluid">
+                        <div id="errorLog" class="text-danger font-weight-bold"></div>
+                    </div>
+                </div>
+            </div>
+        </section >
+        <div class="p-2 overflow">
+            <table></table>
+        </div>
+        <section id="footer">
+            <footer class="page-footer font-small indigo">
+                <div class="container">
+                    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                        <div class="col-md-2 mb-3">
+                            <h6 class="text-uppercase"><a href="https://haydher.github.io/GUI/Hw4" target="_blank">Home</a></h6>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <h6 class="text-uppercase"><a href="https://haydher.github.io/GUI/Hw4/#aboutPage" target="_blank">About</a></h6>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <h6 class="text-uppercase"><a href="https://haydher.github.io/GUI/Hw4/#projectPage" target="_blank">Projects</a></h6>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <h6 class="text-uppercase"><a href="https://haydher.github.io/GUI/Hw4/#contactMe" target="_blank">Contact Me</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <div class="col-md-12 contactImg d-flex justify-content-center">
+                        <a href="https://www.instagram.com/its_alihaider/" target="_blank">
+                            <img alt="INSTAGRAM icon" src="images/icons/ig.svg">
+                        </a>
+                        <a href="https://www.github.com/haydher/" target="_blank">
+                            <img alt="GITHUB icon" src="images/icons/github.svg">
+                        </a>
+                        <a href="mailto:ali_haider@student.uml.edu" target="_blank">
+                            <img alt="Email icon" src="images/icons/email.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-copyright text-center py-3">
+                    © 2020 Copyright: <a href="https://cs.uml.edu/~ahaider/">Ali Haider</a>
+                </div>
+            </footer>
+        </section>
+    </body>
+    <script src="javascript/script.js" charset="utf-8"></script>
+    <!-- <script src="javascript/jquery.js"></script> -->
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</html>
