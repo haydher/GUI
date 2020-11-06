@@ -8,12 +8,6 @@
 
 
 $(document).ready(function () {
-
-    $.validator.addMethod('lessThanMin', function(value, element, param) {
-      return this.optional(element) || value >= $(param).val();
-    } , "Maximum value can't be less than the minimum value.");
-  
-
     $("form").submit(function(e) {
           e.preventDefault();
           makeTable();
@@ -26,7 +20,6 @@ $(document).ready(function () {
         "maxXValue": {
           required: true,
           range: [-150, 150],
-        //   lessThanMin: "#minXValue"
         },
         "minYValue": {
           required: true,
@@ -35,7 +28,6 @@ $(document).ready(function () {
         "maxYValue": {
           required: true,
           range: [-150, 150],
-        //   lessThanMin: "#minYValue"
         }
       },
       messages: {
@@ -44,7 +36,7 @@ $(document).ready(function () {
           range: "Number must be between -150 to 150."
         },
         maxXValue: {
-          required: "Please enter a minimum column value. Must be an integer.",
+          required: "Please enter a maximum column value. Must be an integer.",
           range: "Number must be between -150 to 150."
         },
         minYValue: {
@@ -52,7 +44,7 @@ $(document).ready(function () {
           range: "Number must be between -150 to 150."
         },
         maxYValue: {
-          required: "Please enter a minimum row value. Must be an integer.",
+          required: "Please enter a maximum row value. Must be an integer.",
           range: "Number must be between -150 to 150."
         },
       },
