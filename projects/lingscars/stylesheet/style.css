@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+a,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  border-bottom: 1px solid black;
+}
+body {
+  height: 100vh;
+}
+
+/* the header and navbar used for all pages */
+header {
+  width: 100%;
+  height: 25vh;
+}
+
+#navbar {
+  width: 80%;
+  max-width: 1920px;
+  margin: auto;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+#logo h1 {
+  padding: 20px;
+  font-weight: normal;
+}
+#navMenu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 15px 0;
+}
+
+#navMenu ul img {
+  height: 30px;
+}
+
+#navMenu li {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#navMenu li:hover {
+  border-bottom: 1px solid black;
+}
+#navMenu input {
+  font-size: 30px;
+  width: 120px;
+  border: none;
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: black;
+  outline: none;
+}
+input:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+/* mina page */
+
+#mainPage {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+}
+#container {
+  margin: auto;
+  width: 80%;
+  max-width: 1920px;
+}
+
+.imgNinfo {
+  display: flex;
+  justify-content: space-between;
+}
+.imgHolder {
+  width: 50%;
+}
+.imgHolder img {
+  width: 100%;
+  margin: auto;
+}
+
+.carInfoContainer {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.carInfo {
+  padding: 15px;
+  border: 2px solid black;
+  width: 100%;
+  font-size: 22px;
+}
+
+.bookNow {
+  cursor: pointer;
+  border: 2px solid black;
+  width: 200px;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+/* menu css */
+
+#menuHeader {
+  display: flex;
+}
+#menuHeader h1 {
+  font-size: 32px;
+}
+
+#menuHeader input {
+  margin-left: 50px;
+  font-size: 30px;
+  width: 120px;
+  border: none;
+  cursor: pointer;
+}
+
+#menuHeader input::placeholder {
+  color: black;
+}
+
+#menuHeader img {
+  height: 30px;
+}
+
+#menuHeader table,
+th,
+td {
+  padding: 15px 0;
+  padding-right: 100px;
+  text-align: start;
+  font-size: 22px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/* ABOUT US */
+
+#aboutUSContent h1 {
+  font-size: 60px;
+  margin-bottom: 85px;
+}
+#aboutUSContent p {
+  cursor: pointer;
+  font-size: 26px;
+  padding: 20px 0;
+}
+
+/* contact info */
+.contactInfo table,
+th,
+td {
+  padding: 20px 0;
+  padding-right: 40px;
+  text-align: start;
+  font-size: 20px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/* preBook */
+.buttons {
+  display: flex;
+}
+.buttons .bookNow {
+  margin-right: 25px;
+}
+
+/* preBook login */
+#emailInput {
+  font-size: 16px;
+  width: 95%;
+  margin-top: 10px;
+  padding: 5px 4px;
+  border: none;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+#emailInput:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+.audiLogin {
+  margin: 20px 0;
+}
+
+.emailText {
+  text-decoration: underline;
+  color: rgb(42, 156, 209);
+  cursor: pointer;
+}
+
+/* 404 ERROR */
+#notFound {
+  margin: auto;
+  text-align: center;
+}
+#notFound h1 {
+  font-size: 120px;
+}
+#notFound p {
+  font-size: 60px;
+}
