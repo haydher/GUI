@@ -1,0 +1,147 @@
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .fix-bg img {
+    transform: translateX(52%);
+  }
+  .welcome-container {
+    position: relative;
+    padding-right: 40px;
+    width: 40%;
+  }
+  .welcome-container img {
+    width: 100%;
+  }
+
+  #about {
+    padding: 60px 0;
+    background-image: url("../../images/bg-style/bg-1.png");
+  }
+  .about-container {
+    display: flex;
+    width: 90%;
+  }
+  .about-img-container {
+    height: 600px;
+    width: 45%;
+    background-image: url("../../images/portrait1.jpg");
+  }
+  .about-content-info {
+    width: 60%;
+  }
+  .about-content-info h1 {
+    color: rgba(0, 0, 0, 0.84);
+    padding: 0px 30px;
+    margin-top: 0px;
+    font-size: 36px;
+  }
+  .about-content-info p {
+    padding: 0px 30px;
+    font-size: 24px;
+  }
+
+  #recent-videos {
+    padding: 30px 0;
+    background-image: url("../../images/bg-style/bg-2.png");
+  }
+  .recent-videos-container {
+    width: 90%;
+  }
+  .page-header h1 {
+    font-size: 36px;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 0%;
+    width: auto;
+    padding: 0;
+  }
+  .video-card {
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  .title {
+    font-size: 18px;
+    padding: 10px 5px;
+  }
+  .btn {
+    color: #ffffff;
+    font-size: 18px;
+  }
+  .watch-more {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* merch */
+  #merchandise {
+    padding: 10px 0;
+    background-image: url("../../images/bg-style/bg-3.png");
+  }
+  .merch-container {
+    width: 90%;
+    padding: 0px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+  }
+
+  .merch-card {
+    width: auto;
+  }
+  .merch-card h1 {
+    text-align: center;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.774);
+    font-weight: 700;
+    padding: 0 5px;
+  }
+  .merch-card p {
+    color: rgba(0, 0, 0, 0.63);
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  /* sponsor */
+  #sponsor {
+    background-image: url("../../images/bg-style/bg-4.png");
+  }
+  .sponsor-container {
+    width: 90%;
+  }
+  .sponsor-images {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .sponsor-images img {
+    height: 90px;
+  }
+
+  /* privacy policy */
+  #privacy-policy {
+    padding: 80px 0;
+  }
+  .privacy-container {
+    margin: auto;
+    width: 90%;
+  }
+
+  /* download tab */
+  #download {
+    padding: 100px 0;
+  }
+  #download-h1 {
+    font-size: 36px;
+    font-weight: 800;
+  }
+  .download-container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .download-container h1 {
+    font-weight: 700;
+    font-size: 22px;
+  }
+}

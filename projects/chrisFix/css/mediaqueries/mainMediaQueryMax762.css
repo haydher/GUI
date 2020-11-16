@@ -1,0 +1,204 @@
+@media only screen and (max-width: 762px) {
+  #welcome-page {
+    height: auto;
+    background-color: #000000;
+    background-image: none;
+    /* background-image: url("../../images/cover-mobile.png");
+    background-size: auto;
+    background-attachment: scroll;
+    background-position: center; */
+  }
+  .fix-bg {
+    display: none;
+  }
+
+  .welcome-container {
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: rgb(0, 0, 0, 0.6);
+    padding-right: 0;
+  }
+  .welcome-container img {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  #about {
+    width: 100%;
+    padding: 40px 0;
+    background-image: none;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+  .about-img-container {
+    height: 400px;
+    width: 100%;
+    background-position: center 0%;
+  }
+  .about-img-container img {
+    width: auto;
+    height: 100%;
+  }
+  .about-content-info {
+    width: 100%;
+  }
+  .about-content-info h1 {
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 0;
+    font-size: 26px;
+  }
+  .about-content-info p {
+    padding: 0;
+    font-size: 18px;
+    line-height: 2;
+    text-align: justify;
+  }
+
+  #recent-videos {
+    padding: 10px 0;
+    background-image: none;
+  }
+  .recent-videos-container {
+    width: 90%;
+  }
+  .page-header {
+    color: rgba(0, 0, 0, 0.84);
+    display: flex;
+    padding: 20px 0;
+  }
+  .page-header h1 {
+    font-size: 26px;
+  }
+
+  .card-container {
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .video-card {
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 8px;
+  }
+  .watch-more {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* merch */
+  #merchandise {
+    padding: 0;
+    padding: 20px 0;
+    background-image: none;
+  }
+
+  .merch-container {
+    width: 90%;
+    padding: 0;
+    margin: auto;
+    display: block;
+  }
+
+  .merch-card {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+  }
+  .merch-img-container {
+    width: 100%;
+  }
+  .merch-img-container img {
+    width: 100%;
+  }
+  .merch-card h1 {
+    font-size: 26px;
+  }
+  #merchandise .watch-more {
+    padding-top: 0;
+  }
+
+  /* sponsor */
+  #sponsor {
+    background-image: none;
+    padding-top: 30px;
+  }
+  .sponsor-container {
+    width: 90%;
+    margin: auto;
+  }
+  .sponsor-images {
+    padding-top: 0;
+    padding: 10px;
+    display: block;
+  }
+  .sponsor-images img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  /* gallery */
+
+  #instagram-gallery {
+    padding-top: 20px;
+  }
+
+  /* privacy policy */
+
+  #privacy-policy {
+    width: 100%;
+    padding: 80px 0;
+  }
+  .privacy-container {
+    width: 90%;
+  }
+
+  /* download tab */
+  #download {
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
+  #download-h1 {
+    font-size: 36px;
+    font-weight: 800;
+  }
+  .download-container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .download-container h1 {
+    font-weight: 700;
+    padding: 10px 0;
+  }
+  .download-card {
+    display: block;
+    margin: 20px 0;
+  }
+  .download-card iframe {
+    width: 100%;
+    height: 400px;
+  }
+  .download-info {
+    width: 100%;
+    padding: 5px 20px;
+  }
+}

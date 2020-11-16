@@ -1,0 +1,250 @@
+<!-- 
+******************************************************************************************************************************************************************************
+
+  \\\\\\\\\\\\\\\   |||||||||||||||     ////         ///////////     ///              /////////      |||||||||||||||   /////            ////   //////////////   ///////////
+  ||||        \\\\        |||       ///    //     ////        ///    ///            ////      ////         |||         ///////       ///////   ////             ////      ///
+  ||||         \\\\       |||       ///          ////           //   ///            ////      ////         |||         ////  ///  ///   ////   ////             ////      ///
+  ||||          \\\\      |||         //////    ////                 ///            ////      ////         |||         ////    ///      ////   //////////       ////     ///
+  ||||          ////      |||             ////  ////                 ///            //// //// ////         |||         ////             ////   ////             //////////
+  ||||         ////       |||       //     ///   ////           //   ///            ////      ////         |||         ////             ////   ////             ////     ///
+  ||||        ////        |||      ///     ///    ////        ///    ///        //  ////      ////         |||         ////             ////   ////             ////      ///
+  //////////////    |||||||||||||||  /////          ///////////      ////////////   ////      ////   |||||||||||||||   ////             ////   //////////////   ////       //
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////                                                                                                                                                          ///////////
+///////////   ALL THE CONTENT IN THE PAGE BELONG TO CHRISFIX. I DO NOT OWN ANY OF THE IMAGES, TEXT CONTENT, LINKS, DATA, OR I HAVE ANY AFFILIATION WITH CHRISFIX.    ///////////
+///////////                                                                                                                                                          ///////////
+///////////   ALTHOUGH, ALL THE CODE INCLUDING, THE  HTML, CSS, AND JAVASCRIPT FILES BELONG TO ALI HAIDER AND ARE CODED BY ALI HAIDER.                               ///////////
+///////////                                                                                                                                                          ///////////
+///////////   THIS IS A FAN MADE WEBSITE, IF YOU ARE READING THIS THEN I HAVE ALREADY ASKED CHRISFIX'S PERMISSION TO KEEP THIS WEBSITE IN MY PERSONAL PORTFOLIO      ///////////
+///////////                                                                                                                                                          ///////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChrisFix</title>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/navBar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/mediaqueries/hamburger.css">
+  <link rel="stylesheet" href="css/mediaqueries/mainMediaQuery996-1200.css">
+  <link rel="stylesheet" href="css/mediaqueries/mainMediaQuery762-996.css">
+  <link rel="stylesheet" href="css/mediaqueries/mainMediaQueryMax762.css">
+</head>
+
+<body>
+  <header>
+    <div class="navBar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="">
+        </a>
+        <div class="hamburger" id="navBurger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      </div>
+      <ul class="navUL">
+        <a href="index.html#about">
+          <li class="active-nav">ABOUT</li>
+        </a>
+        <a href="index.html#recent-videos">
+          <li>VIDEOS</li>
+        </a>
+        <a href="index.html#merchandise">
+          <li>STORE</li>
+        </a>
+        <a href="index.html#instagram-gallery">
+          <li>LATEST</li>
+        </a>
+        <a href="downloads.html" target="_blank">
+          <li>DOWNLOADS</li>
+        </a>
+      </ul>
+      <a href="https://www.youtube.com/user/PaintballOO7?sub_confirmation=1" target="_blank">
+        <button class="subscribe-btn">SUBSCRIBE</button>
+      </a>
+      
+    </div>
+  </header>
+
+  <section id="welcome-page">
+    <div class="fix-bg" >
+      <img src="images/cover.png" alt="background image">
+    </div>
+    <div class="welcome-container">
+      <img src="images/welcomeImg.svg" alt="">
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-container hidden">
+      <div class="about-img-container">
+        <!-- <img src="images/portrait1.jpg" alt=""> -->
+      </div>
+      <div class="about-content-info">
+        <h1>ABOUT ChrisFix</h1>
+        <p>Hey guys, ChrisFix here! My YouTube channel
+          is the world’s largest automotive DIY channel
+          on YouTube. I started my channel with the goal
+          of helping people learn how to fix their car
+          so they could save money and maybe even start
+          a new hobby with cars! Since then, I have been
+          able to teach millions of people all over the
+          world, from every country, on every continent,
+          how to fix and maintain their car. Each video
+          is a step-by-step, how-to style demonstration
+          that has the best camera angles, sharp focus,
+          and clear audio so after watching it, you will
+          be able to fix your own car.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="recent-videos">
+    <div class="recent-videos-container hidden">
+      <div class="page-header">
+        <h1>RECENT VIDEOS</h1>
+      </div>
+      <div class="card-container hidden"></div>
+      <div class="watch-more">
+        <a href="https://www.youtube.com/c/chrisfix/videos" target="_blank">
+          <button class="btn">Watch More</button>
+        </a>
+      </div>
+  </section>
+
+  <section id="merchandise">
+    <div class="page-header hidden">
+      <h1>MERCHANDISE</h1>
+    </div>
+    <div class="merch-container hidden">
+      <div class="merch-card">
+        <div class="merch-img-container">
+          <img src="images/merch/short_sleeve.png" alt="">
+        </div>
+        <h1>DRIFTSTANG TEE</h1>
+        <!-- <p>$123.99</p> -->
+        <a href="https://teespring.com/ChrisFix-DriftTeam-Mustang2?pid=370&cid=6531" target="_blank">
+          <button class="btn">SHOP NOW</button>
+        </a>
+      </div>
+      <div class="merch-card">
+        <div class="merch-img-container">
+          <img src="images/merch/long_sleeve.png" alt="">
+        </div>
+        <h1>DRIFTSTANG LONG TEE</h1>
+        <!-- <p>$123.99</p> -->
+        <a href="https://teespring.com/ChrisFix-DriftTeam-Mustang2?pid=328&cid=6276" target="_blank">
+          <button class="btn">SHOP NOW</button>
+        </a>
+      </div>
+      <div class="merch-card">
+        <div class="merch-img-container">
+          <img src="images/merch/hoodie.png" alt="">
+        </div>
+        <h1>DRIFTSTANG HOODIE</h1>
+        <!-- <p>$123.99</p> -->
+        <a href="https://teespring.com/ChrisFix-DriftTeam-Mustang2?pid=227&cid=2664" target="_blank">
+          <button class="btn">SHOP NOW</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="watch-more">
+      <a href="https://teespring.com/stores/chrisfix" target="_blank">
+        <button class="btn">SHOP ALL</button>
+      </a>
+    </div>
+
+  </section>
+
+  <section id="sponsor">
+    <div class="sponsor-container">
+      <div class="page-header hidden">
+        <h1>SPONSORS</h1>
+      </div>
+      <div class="sponsor-images visible hidden">
+        <img src="images/sponsor/advance-auto-parts.png" alt="">
+        <img src="images/sponsor/teng-tools.png" alt="">
+        <img src="images/sponsor/blinker-fluid.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section id="instagram-gallery">
+    <div class="page-header hidden">
+      <h1>RECENT INSTAGRAM POSTS</h1>
+    </div>
+    <div class="gallery-container hidden"></div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-main-content">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="Chris fix logo">
+          </a>
+        </div>
+        <div class="footer-nav">
+         
+          <ul>
+            <a href="index.html#about">
+              <li class="active-nav">ABOUT</li>
+            </a>
+            <a href="index.html#recent-videos">
+              <li>VIDEOS</li>
+            </a>
+            <a href="index.html#merchandise">
+              <li>STORE</li>
+            </a>
+            <a href="index.html#instagram-gallery">
+              <li>LATEST</li>
+            </a>
+            <a href="downloads.html" target="_blank">
+              <li>DOWNLOADS</li>
+            </a>
+          </ul>
+        </div>
+        <div class="social-links">
+          <a href="https://www.youtube.com/channel/UCes1EvRjcKU4sY_UEavndBw" target="_blank">
+            <img src="images/social-icons/yt-logo.png" alt="Youtube social icon">
+          </a>
+          <a href="https://www.instagram.com/chrisfixit/" target="_blank">
+            <img src="images/social-icons/insta-logo.png" alt="instagram social icon">
+          </a>
+          <a href="https://www.facebook.com/chrisfix8/" target="_blank">
+            <img src="images/social-icons/fb-logo.png" alt="facebook social icon">
+          </a> 
+          <a href="https://twitter.com/ChrisFixed" target="_blank">
+            <img src="images/social-icons/twitter-logo.png" alt="Twitter social icon">
+          </a>
+        </div>
+      </div>
+      <div class="copyright">
+        <a href="privacypolicy.html" target="_blank"><p class="link">Privacy Policy</p></a>
+        <p>© Copyright <span id="copyright"></span> ChrisFix. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="javascript/script.js"></script>
+  <script src="javascript/yt-api.js"></script>
+  <script src="javascript/ig-api.js"></script>
+</body>
+
+</html>

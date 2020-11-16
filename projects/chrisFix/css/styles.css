@@ -1,0 +1,363 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* for phone */
+.hamburger {
+  display: none;
+}
+
+#welcome-page {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 50;
+}
+.fix-bg {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.fix-bg img {
+  height: 100%;
+  transform: translateX(40%);
+  overflow: hidden;
+}
+.welcome-container {
+  position: relative;
+  padding-right: 50px;
+  width: 40%;
+}
+.welcome-container img {
+  width: 100%;
+}
+
+#about {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 80px 0;
+
+  background-image: url("../images/bg-style/bg-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.about-img-container {
+  height: 700px;
+  width: 45%;
+  background-image: url("../images/portrait1.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center 0%;
+  border-radius: 10px;
+}
+.about-img-container img {
+  width: auto;
+  height: 150%;
+}
+.about-content-info {
+  width: 60%;
+}
+.about-content-info h1 {
+  color: rgba(0, 0, 0, 0.84);
+  padding: 26px 48px;
+  margin-top: 40px;
+  font-size: 40px;
+}
+.about-content-info p {
+  padding: 0 48px;
+  font-size: 26px;
+}
+
+#recent-videos {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+
+  background-image: url("../images/bg-style/bg-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.recent-videos-container {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+.page-header {
+  color: rgba(0, 0, 0, 0.84);
+  display: flex;
+  padding: 40px 0;
+}
+.page-header h1 {
+  font-size: 40px;
+  margin: auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  justify-content: space-between;
+  width: auto;
+  padding: 20px 0;
+}
+.video-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: auto;
+  border-radius: 8px;
+
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.yt-iFrame {
+  height: 200px;
+  width: 100%;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+}
+.title {
+  font-size: 1vw;
+  font-weight: 600;
+  padding: 10px 5px;
+}
+.btn {
+  background-color: rgb(68, 68, 68);
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 60px;
+  font-size: 18px;
+  padding: 8px 16px;
+  color: rgb(221, 221, 221);
+  transition: 0.2s ease;
+  margin: 10px 0;
+  outline: none;
+}
+.btn:hover {
+  background-color: #ff0000;
+  color: white;
+  transition: 0.2s ease;
+}
+.watch-more {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+/* merch */
+#merchandise {
+  padding: 50px 0;
+
+  background-image: url("../images/bg-style/bg-3.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.merch-container {
+  width: 80%;
+  padding: 40px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  justify-content: space-around;
+}
+
+.merch-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #ffffff;
+  height: auto;
+  width: auto;
+
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.merch-img-container {
+  width: 100%;
+  padding: 0 40px;
+  padding-top: 20px;
+}
+.merch-img-container img {
+  width: 100%;
+}
+.merch-card h1 {
+  font-size: 1.7vw;
+  color: rgba(0, 0, 0, 0.774);
+  font-weight: 700;
+}
+.merch-card p {
+  color: rgba(0, 0, 0, 0.63);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* sponsor */
+#sponsor {
+  background-color: #f8f8f8;
+
+  background-image: url("../images/bg-style/bg-4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sponsor-container {
+  width: 80%;
+  margin: auto;
+}
+.sponsor-images {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsor-images img {
+  height: 100px;
+  margin: 40px;
+}
+.gallery-container ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-container li {
+  height: 40vh;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.gallery-container img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.gallery-container li:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+@media (max-aspect-ratio: 1/1) {
+  .gallery-container li {
+    height: 30vh;
+  }
+}
+
+@media (max-height: 480px) {
+  .gallery-container li {
+    height: 80vh;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  .gallery-container ul {
+    flex-direction: row;
+  }
+
+  .gallery-container li {
+    height: auto;
+    width: 100%;
+  }
+  .gallery-container img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+
+/* fades in the elements */
+.link {
+  font-weight: 600;
+  color: #166ff5;
+}
+.visible-mobile {
+  opacity: 1;
+}
+.visible {
+  transition: opacity 1.5s ease;
+}
+.hidden {
+  opacity: 0;
+}
+
+/* privacy policy */
+#privacy-policy {
+  padding: 80px 0;
+}
+.privacy-container {
+  margin: auto;
+  width: 50%;
+}
+.privacy-container h1 {
+  font-weight: 600;
+  padding: 10px 0;
+}
+.privacy-container p {
+  text-align: justify;
+}
+
+/* download tab */
+#download {
+  padding: 100px 0;
+}
+#download-h1 {
+  font-size: 36px;
+  font-weight: 800;
+}
+.download-container {
+  width: 80%;
+  margin: auto;
+}
+
+.download-container h1 {
+  font-weight: 700;
+  padding: 10px 0;
+}
+.download-card {
+  display: flex;
+  margin: 40px 0;
+}
+.download-info {
+  width: 60%;
+  padding: 5px 20px;
+}
