@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- just a big div that animates the background -->
+  <div id="gradientBG"></div>
+
+  <!-- main div -->
+  <div id="root">
+    <!-- title -->
+    <p id="tie">Good Luck!</p>
+
+    <!-- holds both players info -->
+    <div id="gameContainer">
+      <!-- player data -->
+      <div class="playerContainer">
+        <h1>Your Score: <span id="playerScore">0</span></h1>
+        <img src="images/player-rock.png" class="playerImg">
+        <p>Player: <span id="player">None</span></p>
+      </div>
+      <div class="botContainer">
+        <h1>Bot Score: <span id="botScore">0</span></h1>
+        <img src="images/rock.png" class="botImg">
+        <p>Bot: <span id="bot">None</span></p>
+      </div>
+    </div>
+    <button type="button">Rock</button>
+    <button type="button">Paper</button>
+    <button type="button">Scissors</button>
+    
+    <!-- button to reset the game -->
+    <p>
+      <button type="button" id="reset">Reset</button>
+    </p>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
