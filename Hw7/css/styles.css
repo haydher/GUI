@@ -120,3 +120,8 @@ footer {
   height: 50px;
   margin: 10px;
 }
+.ui-icon-close {
+  font-weight: 900;
+  cursor: pointer;
+  padding: 5px 2px;
+}
