@@ -150,19 +150,19 @@ $(document).ready(function () {
     rules: {
       "minXValue": {
         required: true,
-        range: [-RangeNeg, RangePos],
+        range: [RangeNeg, RangePos],
       },
       "maxXValue": {
         required: true,
-        range: [-RangeNeg, RangePos],
+        range: [RangeNeg, RangePos],
       },
       "minYValue": {
         required: true,
-        range: [-RangeNeg, RangePos]
+        range: [RangeNeg, RangePos]
       },
       "maxYValue": {
         required: true,
-        range: [-RangeNeg, RangePos],
+        range: [RangeNeg, RangePos],
       }
     },
     messages: {
