@@ -259,18 +259,20 @@ function makeTab(tableHeader) {
   const newLink = document.createElement("a")
   const newSpan = document.createElement("span")
   const newInput = document.createElement("input")
+  const br = document.createElement("br")
 
   newLink.className += "tab"
   newLink.href = `#${tableHeader}`
   newLink.textContent = tableHeader
 
-  newSpan.className += "ui-icon ui-icon-close"
-
+  newSpan.className += "ui-icon-close"
+  newSpan.textContent = "x"
   newInput.type = "checkbox";
   newInput.className += "checkBox"
 
   newLI.append(newLink)
   newLI.append(newSpan)
+  newLI.append(br)
   newLI.append(newInput)
   return newLI;
 }
