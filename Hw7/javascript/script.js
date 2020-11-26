@@ -65,7 +65,6 @@ $(document).ready(function () {
   // delete selected tab (got it from jquery website)
   const tabs = $(".tabContainer").tabs();
   tabs.on("click", "span.ui-icon-close", function () {
-    console.log(this.parentElement)
     dltSingleTab(this) 
     tabs.tabs("refresh");
   });
