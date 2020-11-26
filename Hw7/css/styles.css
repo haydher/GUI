@@ -1,0 +1,122 @@
+/* File: https://cs.uml.edu/~ahaider/guiProjects/hw5/index.html
+ Assignment: Multiplication table using javascript
+ Ali Haider, UMass Lowell Computer Science, ali_haider@student.uml.edu
+ Copyright (c) 2020 by Ali Haider. All rights reserved. May be
+ freely copied or excerpted for educational purposes with credit to the
+ author.
+Updated by Ali Haider on Nov 4, 2020 at 9:00 pm
+  */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: white;
+}
+body {
+  overflow-x: hidden;
+}
+.bg {
+  background: #3e9c87;
+}
+.subBtn,
+.resetBtn {
+  background: #3e9c87;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  transition: background 0.2s ease;
+}
+.subBtn:hover {
+  background: #237a67;
+}
+.resetBtn {
+  background: #f22222;
+}
+.resetBtn:hover {
+  background: #db0909;
+}
+
+.subBtn:focus,
+.resetBtn:focus {
+  border: none;
+  outline: none;
+}
+.overflow {
+  max-height: 50vh;
+  width: 80%;
+  padding: 0 200px;
+  margin: 20px auto;
+  overflow: scroll;
+}
+.tabContainer {
+  width: 80%;
+  margin: auto;
+}
+.tabContainer .overflow {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.ui-tabs,
+.ui-tabs-nav,
+.ui-tabs-panel {
+  padding: 0 !important;
+  border: 0 !important;
+}
+.ui-state-active {
+  background: white !important;
+}
+.ui-widget-header {
+  background: #89cebf !important;
+}
+.ui-state-default {
+  background: #54bda6 !important;
+}
+
+.error {
+  color: red;
+}
+
+table {
+  margin: auto;
+}
+
+tr td:first-child {
+  background: #b0b0b0;
+  border: 1px solid black;
+  padding: 5px;
+  font-weight: bold;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
+th {
+  background: #b0b0b0;
+}
+td {
+  background: #f4f4f4;
+}
+td:nth-child(odd) {
+  background-color: white;
+}
+
+#footer {
+  position: relative;
+  bottom: 0;
+}
+footer {
+  background: #24252a;
+  color: #edf0f1;
+  width: 100%;
+}
+.contactImg img {
+  height: 50px;
+  margin: 10px;
+}
