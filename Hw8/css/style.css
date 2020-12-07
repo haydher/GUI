@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#mainContainer {
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+  background-color: bisque;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.gameContainer {
+  background-color: red;
+  width: 60%;
+  margin: auto;
+}
+
+.gameInfo {
+  background-color: rgb(130, 130, 243);
+
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  border-bottom: 1px solid black;
+  font-size: 26px;
+  font-weight: 500;
+}
+span {
+  font-weight: 600;
+}
+
+.table {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  height: 110px;
+  padding: 5px;
+}
+
+.table .dropBox {
+  height: 92px;
+  width: 90px;
+  margin: 0 5px;
+  border: 1px solid black;
+}
+.table .empty {
+  background-image: url("../imgs/backgroundImg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.table .doubleScore {
+  background-image: url("../imgs/doubleScore.jpg");
+}
+.table .fill img {
+  height: 90px;
+  width: 90px;
+}
+
+#rackContainer {
+  position: relative;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  height: 200px;
+  width: 700px;
+  margin: auto;
+
+  background-color: green;
+}
+.rackImg {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+.rack {
+  z-index: 45;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  height: 70%;
+  width: 95%;
+
+  background-color: hsl(180, 100%, 50%, 0.4);
+}
+
+.rack .empty {
+  height: 90px;
+  width: 90px;
+  margin-right: 5px;
+
+  background-color: aquamarine;
+}
+
+.empty img {
+  height: 100%;
+  width: 100%;
+}
+
+.gameControls {
+  background-color: olive;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin: auto;
+  padding: 60px 0;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  margin: auto;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  transition-property: color, background;
+}
+button:hover {
+  color: white;
+  background: rgba(25, 147, 218);
+}
