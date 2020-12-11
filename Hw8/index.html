@@ -17,8 +17,9 @@
         <p>Letters Left: <span class="remainingLetters">-</span></p>
         <p>Current Word: <span class="currentWord">-</span></p>
         <p>Score: <span class="score">-</span></p>
+        <p>Total Score: <span class="totalScore">-</span></p>
       </div>
-
+      
       <div class="table">
         <div class="empty dropBox first"></div>
         <div class="empty dropBox doubleScore"></div>
@@ -30,16 +31,16 @@
         <div class="empty dropBox doubleScore"></div>
         <div class="empty dropBox last"></div>
       </div>
-      
+      <p id="err"></p>
     </div>
     
     <div class="gameControls">
+      <button type="button" class="checkWord">Submit Word</button>
       <button type="button" class="restock">Restock</button>
-      <button type="button" class="checkWord">Check Word</button>
       <button type="button" class="reset">Reset</button>
     </div>
     
-    
+   
     <div id="rackContainer">
       <img src="imgs/rack.png" class="rackImg">
       <div class="rack">

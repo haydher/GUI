@@ -63,6 +63,18 @@ let siblings = false;
 // the user score
 let userScore = 0;
 
+const currentWord = document.querySelector(".currentWord")
+const score = document.querySelector(".score")
+
+// get the rack stack
+const restockBtn = document.querySelector(".restock")
+const rackBox = document.querySelectorAll(".rack > .empty")
+const clearBoardTiles = document.querySelectorAll(".dropBox")
+
+
+
+
+
 // keep getting the updated values
 setInterval(() => {
   // select the fill element (our image)
@@ -107,18 +119,19 @@ function dragStart(){
 
 // drag end listens for the end of the list
 function dragEnd(){
-  // console.log("end")
+  console.log("end")
   // add the img back if u stop dragging it 
   this.classList.add("fill")
   if(dropped == false || draggedOver == false){
     newImgMaker(parent)
+    errorLog("errInvalid")
   }
 }
 
 
 // listens for when the img is on this particular box
 function dragOver(e){
-  // console.log("dragOver")
+  console.log("dragOver")
 
   // prevent the default behaviour of dragover otherwise dragDrop() wouldnt work
   e.preventDefault();
@@ -128,7 +141,7 @@ function dragOver(e){
 
 // checks when img enters the div
 function dragEnter(){
-  // console.log("dragEnter")
+  console.log("dragEnter")
   this.classList.add("hovered")
 }
 
@@ -136,17 +149,15 @@ function dragEnter(){
 let parentPrevious, parentNext;
 // checks when img leaves the div
 function dragLeave(){
-  // console.log("dragLeave")
+  console.log("dragLeave")
 
   // check if user is moving tile from between two other tiles leaving empty space
-  if(!this.classList.contains("first") && !this.classList.contains("rackLetters") ){
+  if(!this.classList.contains("first") && !this.classList.contains("rackLetters") )
     parentPrevious = this.previousSibling.previousSibling.childNodes.length;
-    console.log(parentPrevious)
-  }
-  if(!this.classList.contains("last") && !this.classList.contains("rackLetters") ){
+
+  if(!this.classList.contains("last") && !this.classList.contains("rackLetters") )
     parentNext = this.nextSibling.nextSibling.childNodes.length;
-    console.log(parentNext)
-  }
+
 
   // if the image is dragged out of the box then set it to false so it doesnt make the img disappear
   draggedOver = false;
@@ -158,61 +169,74 @@ let previous, next;
 
 // checks when img is dropped in the div
 function dragDrop(){
-  // console.log("dragDrop")
+  console.log("dragDrop")
   this.classList.remove("hovered")
 
-  // for the first play, if the stack has siblings then must check previous and next.
-  //  otherwise if the siblings is false then user can put letter anywhere
-  let checkSibling = document.querySelectorAll(".dropBox")
-  checkSibling.forEach(e => {
-    // console.log("sibling length:", e.childNodes.length)
-    if(e.childNodes.length === 1)
-      siblings = true;
-  });
+  const checkSib = document.querySelectorAll(".dropBox")
+  siblings = [...checkSib].some(getSiblings)
 
   // check for spaces
   if(!this.classList.contains("first")
-   && !this.classList.contains("rackLetters") )
+   && this.classList.contains("dropBox"))
     previous = this.previousSibling.previousSibling.childNodes.length;
  
   if(!this.classList.contains("last")
-   && !this.classList.contains("rackLetters") )
+   && this.classList.contains("dropBox"))
     next = this.nextSibling.nextSibling.childNodes.length;
- 
   moveTileValidate(this)
+
  
 }
 
 function moveTileValidate(elem){
-  
   // if the box already contains an img then dont append
   if(elem.childNodes.length < 1 && draggedOver === true ){
 
+    //  once the tile has been placed. it should not be moved around
+    if(parent.classList.contains("undraggable")){
+      dropped = false;
+      draggedOver = false;
+      errorLog("errUndraggable")
+      return;
+    }
+
+
       // check if the dropped box is the same box not the rack, if so take the value of the word
     if(elem.classList.contains("dropBox") && (previous == 1 || next == 1 || siblings == false)){
+      clearErrorLog()
       newImgMaker(elem);
+      elem.classList.add("undraggable")
+      
       siblings == true
+
+      // get the letter value from the img src
+      letterValue = currImgSrc.substring(currImgSrc.indexOf("imgs/") + 5, currImgSrc.indexOf(".jpg"));
+      updateUserScore(letterValue, elem)
     } 
+    
     
     else if(parentPrevious == 1 && parentNext == 1 ){
       dropped = false;
       draggedOver = false;
       newImgMaker(parent);
+      errorLog("errParentSiblings")
     }
+
+
     // if user bring letter back to stack allow it
     else if(elem.classList.contains("rackLetters")){
       newImgMaker(elem);
+      // get the letter value from the img src
+      letterValue = currImgSrc.substring(currImgSrc.indexOf("imgs/") + 5, currImgSrc.indexOf(".jpg"));
+      updateUserScore(letterValue, elem)
     } 
     // if it wasnt a valid play and it was not the rack then reset the letter
     else{
       dropped = false;
       draggedOver = false;
       newImgMaker(parent);
+      errorLog("errNoSiblings")
     }
-
-    // get the letter value from the img src
-    letterValue = currImgSrc.substring(currImgSrc.indexOf("imgs/") + 5, currImgSrc.indexOf(".jpg"));
-    checkUserScore(letterValue, elem)
 
     // if drag was successful
     dropped = true;
@@ -220,16 +244,34 @@ function moveTileValidate(elem){
   }
   // if the box already contains img then dont add
   else{
-    
     dropped = false;
     draggedOver = false;
+    errorLog("errTileExists")
   }
 }
 
+// checks if siblings exist for the game board 
+function getSiblings(elem){
+  if(elem.childNodes.length == 1)
+    return true;
+  return false;
+} 
 
-// get the rack stack
-const restockBtn = document.querySelector(".restock")
-const rackBox = document.querySelectorAll(".rack > .empty")
+
+// adds the word to the total score and restock the user hands
+const sbmWord = document.querySelector(".checkWord")
+const totalScore = document.querySelector(".totalScore")
+let tempUserScore = 0;
+sbmWord.addEventListener("click", ()=>{
+  tempUserScore = tempUserScore + userScore
+  totalScore.textContent = tempUserScore
+  stockRack()
+})
+
+// // get the rack stack
+// const restockBtn = document.querySelector(".restock")
+// const rackBox = document.querySelectorAll(".rack > .empty")
+// const clearBoardTiles = document.querySelectorAll(".dropBox")
 
 // restocks the rack of images
 restockBtn.addEventListener("click", stockRack)
@@ -239,17 +281,31 @@ stockRack()
 function stockRack(){
 
   rackBox.forEach(box => {
-    const rand = lettersArr[Math.floor(Math.random() * lettersArr.length)];
-
+    
+    // const rand = lettersArr[Math.floor(Math.random() * lettersArr.length)];
+    const index = Math.floor(Math.random() * lettersArr.length)
+    const rand = lettersArr[index]
+    // console.log({ index, randomLetter })
+    
     // add img on the tack
     if(box.children[0] == undefined){
       newImgMaker(box, rand)
     
       // take the words out of the array once they are on the stack
-      lettersArr.pop(rand)
+      lettersArr.splice(index, 1);
 
       // update the remaining letters for the user
       document.querySelector(".remainingLetters").textContent = lettersArr.length;
+    } 
+  });
+
+  // clear the board if user wishes to get more tiles
+  clearBoardTiles.forEach(element => {
+    if(element.childElementCount >= 0){
+      element.innerHTML = ""
+      userScore = 0;
+      score.innerHTML = userScore
+      currentWord.innerHTML = "-"
     }
   });
 }
@@ -269,10 +325,10 @@ function newImgMaker(box, img = currImgSrc){
   box.append(newDiv)
 }
 
-const currentWord = document.querySelector(".currentWord")
-const score = document.querySelector(".score")
 
-function checkUserScore(letter, element){
+function updateUserScore(letter, element){
+
+
   for(let i = 0; i < newLetters.pieces.length; i++){
     // get the letter from the JSON file
     if(newLetters.pieces[i].letter === letter.toUpperCase()){
@@ -281,14 +337,16 @@ function checkUserScore(letter, element){
       if(element == parent)
        return;
 
-      // if the selected letter is placed on doubleScore, then score is doubled
-      if(element.classList.contains("doubleScore"))
+        // if the selected letter is placed on doubleScore, then score is doubled
+      if(element.classList.contains("doubleScore")){
         userScore = userScore + (newLetters.pieces[i].value * 2);
-
+      
+      }
       // else if its just a regular box, then only add the original value
       else if(!element.classList.contains("doubleScore")
-       && element.classList.contains("dropBox"))      
+       && element.classList.contains("dropBox")){
         userScore = userScore + newLetters.pieces[i].value;
+       }      
 
       // if the tile is brought back from the table and it was from doubleScore
       // then take out respected amount of score
@@ -307,3 +365,47 @@ function checkUserScore(letter, element){
     }
   }
 }
+
+// logs the errors
+const err = document.querySelector("#err");
+function errorLog(errType = "errDefault"){
+  
+  const errDefault = "There was an error moving the tile"
+  const errUndraggable = "The tile can't be moved once placed on the board. Please submit the word to clear the board."
+  const errNoSiblings = "The tile couldn't be placed. The letter needs to be next to an existing tiles."
+  const errParentSiblings = "The tile can't be moved from the middle of the tiles. Please move the words next to it first."
+  const errInvalid = "The tile couldn't move successfully. Please place the tiles in the correct place."
+  const errTileExists = "The block already contains a tile. Please place the tile in an empty block"
+  const errNoRestock = "Can not restock the hand if board still has tiles, please submit the current word before stocking."
+
+  clearErrorLog();
+  switch(errType){
+    case "errUndraggable":
+      err.textContent = errUndraggable;
+      break;
+    case "errNoSiblings":
+      err.textContent = errNoSiblings;
+      break;
+    case "errParentSiblings":
+      err.textContent = errParentSiblings;
+      break;
+    case "errTileExists":
+      err.textContent = errTileExists;
+      break;
+    case "errNoRestock":
+      err.textContent = errNoRestock;
+      break;
+    case "errInvalid":
+      err.textContent = errInvalid;
+      break;
+    case "errDefault":
+      err.textContent = errDefault;
+      break;
+
+  }
+}
+
+function clearErrorLog(){
+  err.innerHTML = ""
+}
+
