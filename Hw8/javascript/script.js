@@ -148,13 +148,12 @@ function dragDrop(){
 
 function moveTileValidate(elem){
   // if the box already contains img then dont add
-  if(elem.childNodes.length >= 1 && draggedOver === false ){
+  if(elem.childNodes.length >= 1 && draggedOver === true ){
     dropped = false;
     draggedOver = false;
     errorLog("errTileExists")
     return;
   }
-
   //  once the tile has been placed. it should not be moved around
   if(parent.classList.contains("undraggable")){
     dropped = false;
