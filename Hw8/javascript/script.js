@@ -1,3 +1,13 @@
+/*
+File: https://haydher.github.io/GUI/Hw8/
+ Assignment: Scrabble Table game
+ Ali Haider, UMass Lowell Computer Science, ali_haider@student.uml.edu
+ Copyright (c) 2020 by Ali Haider. All rights reserved. May be
+ freely copied or excerpted for educational purposes with credit to the
+ author.
+ Updated by Ali Haider on Dec 11, 2020
+*/
+
 let letters = `{"pieces": [
 	{"letter":"A", "value":1,  "amount":9},
 	{"letter":"B", "value":3,  "amount":2},
