@@ -1,26 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--
+File: https://cs.uml.edu/~ahaider/guiProjects/hw5/index.html
+ Assignment: Multiplication table using javascript
+ Ali Haider, UMass Lowell Computer Science, ali_haider@student.uml.edu
+ Copyright (c) 2020 by Ali Haider. All rights reserved. May be
+ freely copied or excerpted for educational purposes with credit to the
+ author.
+ Updated by Ali Haider on Oct 26, 2020 at 9:00 pm  -->
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8">
+  <title>Scrabble Game</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="javascript/script.js"></script>
 </head>
 <body>
+  <section id="mainPage">
+    <nav class="navbar navbar-expand-md sticky-top navbar-light p-3 bg-white rounded">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img alt="Logo" class="logo navbar-brand" src="imgs/logo.svg" width="200">
+        </a>
+        <button class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nav navbar-nav navbar-right collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li>
+              <a class="nav-link active" href="https://haydher.github.io/GUI/Hw4" target="_blank">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="https://haydher.github.io/GUI/Hw4/#aboutPage" target="_blank">About</a>
+            </li>
+            <li>
+              <a class="nav-link" href="https://haydher.github.io/GUI/Hw4/#projectPage" target="_blank">Projects</a>
+            </li>
+            <li>
+              <a class="nav-link" href="https://haydher.github.io/GUI/Hw4/#contactMe" target="_blank">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
   <section id="mainContainer">
+    <div class="container-fluid shadow p-3 pl-4 bg">
+      <h3>Scrabble Gamer</h3>
+    </div>
 
-    <h1>Scrabble Game</h1>
     <div class="gameContainer">
       
       <div class="gameInfo">
         <p>Letters Left: <span class="remainingLetters">-</span></p>
-        <!-- <p>Current Word: <span class="currentWord">-</span></p> -->
         <p>Score: <span class="score">-</span></p>
         <p>Total Score: <span class="totalScore">-</span></p>
       </div>
       
-      <div class="table">
+      <div class="gameBoard">
         <div class="empty dropBox first"></div>
         <div class="empty dropBox doubleScore"></div>
         <div class="empty dropBox"></div>
@@ -35,14 +72,7 @@
       </div>
       <p id="err"></p>
     </div>
-    
-    <div class="gameControls">
-      <button type="button" class="sbtWord">Submit Word</button>
-      <!-- <button type="button" class="restock">Restock</button> -->
-      <button type="button" class="reset">Reset</button>
-    </div>
-    
-   
+
     <div id="rackContainer">
       <img src="imgs/rack.png" class="rackImg" draggable="false">
       <div class="rack">
@@ -56,7 +86,48 @@
         
       </div>
     </div>
+    
+    <div class="gameControls">
+      <button type="button" class="sbtWord">Submit Word</button>
+      <button type="button" class="reset">Restart</button>
+    </div>
+    
   </section>
-
+<section id="footer">
+  <footer class="page-footer font-small indigo">
+    <div class="container">
+      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase"><a href="https://haydher.github.io/GUI/Hw4" target="_blank">Home</a></h6>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase"><a href="https://haydher.github.io/GUI/Hw4/#aboutPage" target="_blank">About</a></h6>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase"><a href="https://haydher.github.io/GUI/Hw4/#projectPage" target="_blank">Projects</a></h6>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase"><a href="https://haydher.github.io/GUI/Hw4/#contactMe" target="_blank">Contact Me</a></h6>
+        </div>
+      </div>
+    </div>
+    <div class="row pt-2">
+      <div class="col-md-12 contactImg d-flex justify-content-center">
+        <a href="https://www.instagram.com/its_alihaider/" target="_blank">
+          <img alt="INSTAGRAM icon" src="imgs/icons/ig.svg">
+        </a>
+        <a href="https://www.github.com/haydher/" target="_blank">
+          <img alt="GITHUB icon" src="imgs/icons/github.svg">
+        </a>
+        <a href="mailto:ali_haider@student.uml.edu" target="_blank">
+          <img alt="Email icon" src="imgs/icons/email.svg">
+        </a>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">
+      © 2020 Copyright: <a href="https://cs.uml.edu/~ahaider/">Ali Haider</a>
+    </div>
+  </footer>
+</section>
 </body>
 </html>

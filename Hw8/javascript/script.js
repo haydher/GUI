@@ -207,13 +207,13 @@ sbmWord.addEventListener("click", ()=>{
   tempUserScore = tempUserScore + userScore
   totalScore.textContent = tempUserScore
   stockRack()
+  clearErrorLog();
 })
 
 // call it once before the game starts
 stockRack()
 // get random images each time page loads
 function stockRack(){
-
   // goes thru the whole rack and restocks any img thats missing from the rack
   rackBox.forEach(box => {
     
@@ -335,9 +335,11 @@ function errorLog(errType = "errDefault"){
       err.textContent = errDefault;
       break;
   }
+  err.style.padding = "20px";
 }
 
 // clears the error log
 function clearErrorLog(){
+  err.style.padding = "0";
   err.innerHTML = ""
 }
