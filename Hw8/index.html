@@ -16,6 +16,7 @@ File: https://haydher.github.io/GUI/Hw8/
   <script defer src="javascript/script.js"></script>
 </head>
 <body>
+  <!-- nav bar -->
   <section id="mainPage">
     <nav class="navbar navbar-expand-md sticky-top navbar-light p-3 bg-white rounded">
       <div class="container-fluid">
@@ -44,19 +45,21 @@ File: https://haydher.github.io/GUI/Hw8/
       </div>
     </nav>
   </section>
+  <!-- contains the game content -->
   <section id="mainContainer">
+    <!-- header -->
     <div class="container-fluid shadow p-3 pl-4 bg">
       <h3>Scrabble Game</h3>
     </div>
-
+    <!-- contains the scrabble board -->
     <div class="gameContainer">
-      
+      <!-- game info -->
       <div class="gameInfo">
         <p>Letters Left: <span class="remainingLetters">-</span></p>
         <p>Score: <span class="score">-</span></p>
         <p>Total Score: <span class="totalScore">-</span></p>
       </div>
-      
+      <!-- game baord -->
       <div class="gameBoard">
         <div class="empty dropBox first"></div>
         <div class="empty dropBox doubleScore"></div>
@@ -70,10 +73,12 @@ File: https://haydher.github.io/GUI/Hw8/
         <div class="empty dropBox doubleScore"></div>
         <div class="empty dropBox last"></div>
       </div>
+      <!-- log the error messages for user -->
       <p id="err"></p>
     </div>
-
+    <!-- the rack container-->
     <div id="rackContainer">
+    <!-- the rack -->
       <img src="imgs/rack.png" class="rackImg" draggable="false">
       <div class="rack">
         <div class="empty rackLetters"></div>
@@ -93,41 +98,41 @@ File: https://haydher.github.io/GUI/Hw8/
     </div>
     
   </section>
-<section id="footer">
-  <footer class="page-footer font-small indigo">
-    <div class="container">
-      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase"><a href="https://haydher.github.io/GUI/Hw4" target="_blank">Home</a></h6>
-        </div>
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase"><a href="https://haydher.github.io/GUI/Hw4/#aboutPage" target="_blank">About</a></h6>
-        </div>
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase"><a href="https://haydher.github.io/GUI/Hw4/#projectPage" target="_blank">Projects</a></h6>
-        </div>
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase"><a href="https://haydher.github.io/GUI/Hw4/#contactMe" target="_blank">Contact Me</a></h6>
+  <section id="footer">
+    <footer class="page-footer font-small indigo">
+      <div class="container">
+        <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase"><a href="https://haydher.github.io/GUI/Hw4" target="_blank">Home</a></h6>
+          </div>
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase"><a href="https://haydher.github.io/GUI/Hw4/#aboutPage" target="_blank">About</a></h6>
+          </div>
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase"><a href="https://haydher.github.io/GUI/Hw4/#projectPage" target="_blank">Projects</a></h6>
+          </div>
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase"><a href="https://haydher.github.io/GUI/Hw4/#contactMe" target="_blank">Contact Me</a></h6>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row pt-2">
-      <div class="col-md-12 contactImg d-flex justify-content-center">
-        <a href="https://www.instagram.com/its_alihaider/" target="_blank">
-          <img alt="INSTAGRAM icon" src="imgs/icons/ig.svg">
-        </a>
-        <a href="https://www.github.com/haydher/" target="_blank">
-          <img alt="GITHUB icon" src="imgs/icons/github.svg">
-        </a>
-        <a href="mailto:ali_haider@student.uml.edu" target="_blank">
-          <img alt="Email icon" src="imgs/icons/email.svg">
-        </a>
+      <div class="row pt-2">
+        <div class="col-md-12 contactImg d-flex justify-content-center">
+          <a href="https://www.instagram.com/its_alihaider/" target="_blank">
+            <img alt="INSTAGRAM icon" src="imgs/icons/ig.svg">
+          </a>
+          <a href="https://www.github.com/haydher/" target="_blank">
+            <img alt="GITHUB icon" src="imgs/icons/github.svg">
+          </a>
+          <a href="mailto:ali_haider@student.uml.edu" target="_blank">
+            <img alt="Email icon" src="imgs/icons/email.svg">
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="footer-copyright text-center py-3">
-      © 2020 Copyright: <a href="https://cs.uml.edu/~ahaider/">Ali Haider</a>
-    </div>
-  </footer>
-</section>
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright: <a href="https://cs.uml.edu/~ahaider/">Ali Haider</a>
+      </div>
+    </footer>
+  </section>
 </body>
 </html>
