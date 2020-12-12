@@ -15,7 +15,7 @@
       
       <div class="gameInfo">
         <p>Letters Left: <span class="remainingLetters">-</span></p>
-        <p>Current Word: <span class="currentWord">-</span></p>
+        <!-- <p>Current Word: <span class="currentWord">-</span></p> -->
         <p>Score: <span class="score">-</span></p>
         <p>Total Score: <span class="totalScore">-</span></p>
       </div>
@@ -25,7 +25,9 @@
         <div class="empty dropBox doubleScore"></div>
         <div class="empty dropBox"></div>
         <div class="empty dropBox"></div>
+        <div class="empty dropBox"></div>
         <div class="empty dropBox doubleScore"></div>
+        <div class="empty dropBox"></div>
         <div class="empty dropBox"></div>
         <div class="empty dropBox"></div>
         <div class="empty dropBox doubleScore"></div>
@@ -35,14 +37,14 @@
     </div>
     
     <div class="gameControls">
-      <button type="button" class="checkWord">Submit Word</button>
-      <button type="button" class="restock">Restock</button>
+      <button type="button" class="sbtWord">Submit Word</button>
+      <!-- <button type="button" class="restock">Restock</button> -->
       <button type="button" class="reset">Reset</button>
     </div>
     
    
     <div id="rackContainer">
-      <img src="imgs/rack.png" class="rackImg">
+      <img src="imgs/rack.png" class="rackImg" draggable="false">
       <div class="rack">
         <div class="empty rackLetters"></div>
         <div class="empty rackLetters"></div>
@@ -51,6 +53,7 @@
         <div class="empty rackLetters"></div>
         <div class="empty rackLetters"></div>
         <div class="empty rackLetters"></div>
+        
       </div>
     </div>
   </section>

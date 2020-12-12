@@ -6,7 +6,7 @@
 
 #mainContainer {
   height: 100vh;
-  width: 80%;
+  width: 100%;
   margin: auto;
   background-color: bisque;
 }
@@ -17,7 +17,7 @@ h1 {
 }
 .gameContainer {
   background-color: red;
-  width: 60%;
+  width: 100%;
   margin: auto;
 }
 
